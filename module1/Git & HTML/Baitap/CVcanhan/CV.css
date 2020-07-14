@@ -1,0 +1,29 @@
+#divTopCV {
+    background-color: #701dff;
+    text-align: center;
+}
+#divTopCV h2{
+    color: #dadada;
+}
+#divleft> h2{
+    text-align: center;
+}
+
+#divleft{
+    float: left;
+    width: 40%;
+    background-color: #7700ff;
+}
+#divleft>#anh >img{
+    width: 30%;
+}
+#thongtin >ul{
+    margin-bottom: 70px;
+}
+#divright{
+    background-color: #dcd1ff;
+    float: left;
+    width: 59%;
+    border: #202123 solid 1px;
+    padding-left:  10px;
+}
