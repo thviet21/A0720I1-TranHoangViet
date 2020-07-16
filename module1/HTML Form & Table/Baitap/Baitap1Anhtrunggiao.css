@@ -1,0 +1,17 @@
+div{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(224,188,141,0.2);
+}
+div h2{
+    color: blue;
+    text-align: center;
+}
+h2 {
+    background-color: rgba(255,230,199,0.2);
+}
+form input{
+    margin-top: 10px;
+}

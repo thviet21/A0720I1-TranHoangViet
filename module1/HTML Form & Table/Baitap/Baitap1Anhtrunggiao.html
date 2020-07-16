@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 1 anh trung giao</title>
+    <link rel="stylesheet" href="Baitap1Anhtrunggiao.css">
+</head>
+<body>
+<div>
+    <form>
+        <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+        <fieldset style="background-color: #fff3bc">
+            <label>Họ và tên: </label>
+            <input type="text" name="hovaten" required><br>
+            <label>Ngày sinh: </label>
+            <input type="text" name="ngaysinh"required><br>
+            <label>Giới tính: </label>
+            <input type="radio" name="gioitinh" value="Nam" checked>Nam
+            <input type="radio" name="gioitinh" value="Nam">Nữ <br>
+            <label style="text-align: justify">Địa chỉ: </label>
+            <textarea name="diachi" id="" cols="30" rows="10" required></textarea>
+            <br>
+            <label>Lớp: </label>
+            <select name="class"  required>
+                <option>-Chọn lớp-</option>
+                <option value="Lớp 1">Lớp 1</option>
+                <option value="Lớp 2">Lớp 2</option>
+                <option value="Lớp 3">Lớp 3</option>
+                <option value="Lớp 4">Lớp 4</option>
+            </select><br>
+            <label>Email: </label>
+            <input type="text" name="email"  required><br>
+            <label>Điện thoại: </label>
+            <input type="text" name="telephonenumber" required><br>
+            <input type="submit" onclick="alert('Đăng ký thành công')">
+            <input type="reset">
+        </fieldset>
+
+    </form>
+
+</div>
+</body>
+</html>

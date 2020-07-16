@@ -25,3 +25,9 @@ table, th, td {
 table> tr:nth-child(2+3+4){
     background-color: yellow;
 }
+.dong1 > th{
+    background-color: yellow;
+   }
+.dong2 > th{
+       background-color: orange;
+   }
