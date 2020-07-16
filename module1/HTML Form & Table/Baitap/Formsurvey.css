@@ -1,0 +1,17 @@
+#divAge > select{
+    width: 300px;
+}
+#divSalary > select{
+    width: 300px;
+}
+
+
+table {
+
+    border-collapse: collapse;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+}

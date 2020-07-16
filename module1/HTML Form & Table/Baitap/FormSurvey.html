@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Survey</title>
+    <link rel="stylesheet" href="Formsurvey.css">
 </head>
 <body>
 <div id="divTop">
@@ -11,7 +12,7 @@
 </div>
 <hr>
 <div id="divThanSurrvey">
-    <div>
+    <div id="divAge">
         <p><b>What is your age range?</b></p>
         <select name="Age" class="age">
             <option value="18-24">18-24</option>
@@ -20,9 +21,9 @@
             <option value="50+">50+</option>
         </select>
     </div>
-    <div>
+    <div id="divSalary">
         <p><b>What is your yearly income</b></p>
-        <select name="Age" class="age">
+        <select name="Salary" class="salary">
             <option value="$0-$25000">$0-$25000</option>
             <option value="$25001-$50000">$25001-$50000</option>
             <option value="$50001-$100000">$50001-$100000</option>
@@ -31,11 +32,67 @@
     </div>
     <div>
         <p><b>Gender Identity</b></p>
+        <input type="radio" name="gender" value="Male">Male <br>
+        <input type="radio" name="gender" value="Famale">Famale<br>
+        <input type="radio" name="gender" value="Nonbinary">Nonbinary<br>
+        <input type="radio" name="gender" value="Other">Other<br>
+        <input type="text" name="gender">
     </div>
-    <input type="radio" name="gender" value="gender">Male
-    <input type="radio" name="gender" value="gender">Male
-    <input type="radio" name="gender" value="gender">Male
-    <input type="radio" name="gender" value="gender">Male
+    <div>
+        <p><b>Which of following products have your purchased in the last 2 months. Please check all that apply</b></p>
+        <input type="checkbox" value="Product1">Product 1 <br>
+        <input type="checkbox" value="Product2">Product 2 <br>
+        <input type="checkbox" value="Product3">Product 3
+    </div>
+    <div>
+        <p><b>How often would u use our new product?</b></p>
+        <input type="radio" name="useproduct" value="Daily">Daily<br>
+        <input type="radio" name="useproduct" value="Weekly">Weekly<br>
+        <input type="radio" name="useproduct" value="Monthly">Monthly<br>
+    </div>
+    <div>
+        <p><b>What would you pay for the new product?</b></p>
+        <span>$</span>
+        <input type="number" style="width: 100px">. <input style="width: 20px" type="number"><br>
+        <span>Dollars</span><span style="margin-left: 100px">Cent</span>
+    </div>
+    <div>
+        <p><b>What would you pay for the new product?</b></p>
+        <textarea name="report" id="" cols="50" rows="10"></textarea>
+    </div>
+    <div>
+        <p>Please rate your level of argreement with the following statements</p>
+        <table>
+            <tr>
+                <td style="background-color: rgba(0,0,0,0.2);width: 300px"></td>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <th>Our products are priced fairly</th>
+                <td><input type="radio" name="price" value="Strongly Disargee"></td>
+                <td><input type="radio" name="price" value="Disargee"></td>
+                <td><input type="radio" name="price" value="Argee"></td>
+                <td><input type="radio" name="price" value="Strongly Argee"></td>
+            </tr>
+            <tr>
+                <th>Our products are high quality</th>
+                <td><input type="radio" name="quality" value="Strongly Disargee"></td>
+                <td><input type="radio" name="quality" value="Disargee"></td>
+                <td><input type="radio" name="quality" value="Argee"></td>
+                <td><input type="radio" name="quality" value="Strongly Argee"></td>
+            </tr>
+            <tr>
+                <th>You would recommend our product to a friend or coworker</th>
+                <td><input type="radio" name="sharefriend" value="Strongly Disargee"></td>
+                <td><input type="radio" name="sharefriend" value="Disargee"></td>
+                <td><input type="radio" name="sharefriend" value="Argee"></td>
+                <td><input type="radio" name="sharefriend" value="Strongly Argee"></td>
+            </tr>
+        </table>
+    </div>
 </div>
 </body>
 </html>
