@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+
+}
+tr{
+    border-top: solid 1px #dadada;
+    border-bottom: solid 1px #dadada;
+}
+table tr:nth-child(1){
+    background-color: rgba(0,0,0,0.49);
+}
+select{
+    background-color: rgba(0,0,0,0.18);
+}
+#Submit{
+    background-color: #1da1f2;
+}

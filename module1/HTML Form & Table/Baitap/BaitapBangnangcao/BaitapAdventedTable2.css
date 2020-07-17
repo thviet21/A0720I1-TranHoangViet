@@ -12,7 +12,7 @@ tr:nth-child(1) th:nth-child(1){
     color: white;
 }
 tr:nth-child(1) th:nth-child(n+2){
-     background-color: yellow;
+     background-color: #ffab05;
      color: white;
  }
 tr:nth-child(1) th:nth-child(7){
