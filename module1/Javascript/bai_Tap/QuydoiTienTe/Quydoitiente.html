@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quy đổi tiền tệ</title>
+    <link rel="stylesheet" href="Quydoitiente.css">
+
+</head>
+<body>
+
+<form>
+    <label for="tien"><b>Amount</b></label>
+    <label for="tiente"><b>From Currency</b></label>
+    <label for="tiente2"><b>To Currency</b></label><br>
+    <input type="number" id="tien" required>
+    <select id="tiente">
+        <option value="tienViet">VND</option>
+        <option value="tienDollar">USD</option>
+    </select>
+    <select id="tiente2">
+        <option value="tienDollar">USD</option>
+        <option value="tienViet">VND</option>
+    </select>
+    <input type="submit" value="Convert" id="Convert" onclick="clickConvert(); return false;">
+    <input type="reset" value="Reset" onclick="clickReset()">
+
+</form>
+<p>Số tiền quy đổi</p>
+<div id="result">
+    
+</div>
+</body>
+</html>
+<script src="Quydoitiente.js">
+
+</script>
