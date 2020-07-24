@@ -6,15 +6,15 @@
 </head>
 <body>
 <h1>Caculator</h1>
-<form>
+<form onsubmit="return false" id="form">
     <label for="soA">Nhập vào số A</label>
     <input type="number" id="soA" required><br>
     <label for="soB">Nhập vào số B</label>
     <input type="number" id="soB" required><br>
-    <button id="phepCong" onclick="phepCong(); ">Thực hiện Cộng</button>
-    <button id="phepTru" onclick="phepTru(); ">Thực hiện Trừ</button>
-    <button id="phepNhan"  onclick="phepNhan(); ">Thực hiện Nhân</button>
-    <button id="phepChia"  onclick="phepChia();">Thực hiện Chia</button>
+    <input type="submit" id="Cong" value="Thực hiện Cộng">
+    <input type="submit" id="Tru" value="Thực hiện Trừ ">
+    <input type="submit" id="Nhan" value="Thực hiện Cộng">
+    <input type="submit" id="Chia" value="Thực hiện Cộng">
 </form>
 <p>Kết quả trả về: </p>
 <div id="result"></div>
