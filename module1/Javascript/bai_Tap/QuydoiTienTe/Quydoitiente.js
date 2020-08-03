@@ -10,16 +10,14 @@ function clickConvert() {
             document.getElementById("result").innerHTML = quyDoi;
         }
         else if((inputLoaiTienCanDoi === "tienViet")&&(inputLoaiTienDoiRa === "tienViet")){
-            let quyDoi = soTien;
-            document.getElementById("result").innerHTML = quyDoi;
+            alert("Vui lòng chuyển đổi tiền tệ khác nhau");
         }
         else if((inputLoaiTienCanDoi === "tienDollar")&&(inputLoaiTienDoiRa === "tienViet")){
             let quyDoi = soTien*23000;
             document.getElementById("result").innerHTML = quyDoi;
         }
         else if((inputLoaiTienCanDoi === "tienDollar")&&(inputLoaiTienDoiRa ==="tienDollar")){
-            let quyDoi = soTien;
-            document.getElementById("result").innerHTML = quyDoi;
+            alert("Vui lòng chuyển đổi tiền tệ khác nhau");
         }
 
     }

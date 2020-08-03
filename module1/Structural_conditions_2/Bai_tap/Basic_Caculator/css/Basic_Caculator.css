@@ -1,0 +1,17 @@
+table{
+    border: solid 2px red;
+}
+
+button{
+    width: 40px;
+    height: 40px;
+    color: blue;
+    font-size: 16px;
+    font-weight: bold;
+}
+#inandout{
+    height: 50px;
+    align-content: center;
+    justify-content: center;
+    text-align: right;
+}
