@@ -1,0 +1,15 @@
+pre{
+    background-color: rgba(96, 255, 0, 0.58);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    font-family: "Bookman Old Style";
+}
+pre >h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    text-align: center;
+}
