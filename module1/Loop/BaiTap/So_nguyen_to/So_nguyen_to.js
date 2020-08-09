@@ -15,14 +15,13 @@ function hienThiSNT() {
         if (kTraSNT(soCanKtra)){
             //If trên đúng thì biến root nhận giá trị của biến soCanKtra hiện tại+ với thẻ br để xuống dòng
             root += soCanKtra + "<br>";
-            //Hiển thị snt
-            document.getElementById("result").innerHTML = root ;
             //Tăng đếm vì nó là số nt
             bienDem++;
         }
         //Dù if đúng hay sai biến soCanKtra này vẫn tăng vì nó số quyết định để tiếp tục với số tiếp theo.
         soCanKtra++
     }
+    document.getElementById("result").innerHTML = root ;
 }
 function kTraSNT(n) {
     if (n <= 1) {
