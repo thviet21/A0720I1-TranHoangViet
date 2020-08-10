@@ -12,89 +12,6 @@ let get_typeHouse = document.getElementById("typeHouse");
 let get_typeRoom = document.getElementById("typeRoom");
 let total_Price = 0;
 let discount = 0;
-let discount_Country ;
-let discount_RentDay ;
-let discount_Cus;
-function doSomething() {
-    let get_Request = parseInt(prompt("Nhập vào trang bạn muốn chuyển đến!\n" +
-        "1.Show Information Booking Room.\n" + "" +
-        "2.Edit information Booking Room.\n" + "3.Tổng giá tiền phải trả khi đã giảm giá."));
-    switch (get_Request) {
-        case 1:
-            show_Information();
-            break;
-        case 2:
-            return false;
-        // break;
-        case 3:
-            showTotalPrice();
-            break;
-        default:
-            alert("Bạn vui lòng chọn các chức năng có trong trình đơn ");
-    }
-
-}
-
-let showTotalPrice = () => {
-    // Giảm giá theo địa phương
-    switch (get_country.value) {
-        case 'Da Nang':
-            discount_Country = 20;
-            break;
-        case 'Hue':
-            discount_Country = 10;
-            break;
-        case "Quang Nam":
-            discount_Country = 5;
-            break;
-        default:
-            discount_Country = 0;
-    }
-    // Giảm giá theo số ngày thuê
-    if (parseInt(get_rentDay.value) > 7){
-        discount_RentDay = 30;
-    }else if (parseInt(get_rentDay.value)>=5){
-        discount_RentDay = 20;
-    }else if (parseInt(get_rentDay.value)>=2){
-        discount_RentDay = 10;
-    }else {
-        discount_RentDay = 0;
-    }
-    //Giảm giá theo loại khách hàng
-    switch (get_typeCus.value) {
-        case 'Diamond':
-            discount_Cus = 15;
-            break;
-        case 'Platium':
-            discount_Country = 10;
-            break;
-        case "Gold":
-            discount_Country = 5;
-            break;
-        case "Silver":
-            discount_Country = 2;
-            break;
-        default:
-            discount_Country = 0;
-    }
-    //tính giảm giá
-    discount = discount_Country + discount_RentDay + discount_Cus;
-
-    // Tính tổng tiền theo loại Nhà
-    if (get_typeHouse.value === "Villa") {
-        total_Price = (500 * parseInt(get_rentDay.value)) - discount;
-    } else if (get_typeHouse.value === "House") {
-        total_Price = (300 * parseInt(get_rentDay.value)) - discount;
-    } else {
-        total_Price = (100 * parseInt(get_rentDay.value) )- discount;
-    }
-    // console.log(total_Price);
-    let result1 = "<h3>Priced Booking!</h3>" + "<hr color='red'>" +
-        "<span class='spanLeft'>Total Price: </span>" + "<span class='spanRight'>" + total_Price + "</span>" + "<br>";
-    document.getElementById("result").innerHTML = result1;
-}
-
-
 let show_Information = () => {
     let result = "<h3>Confirm Information Booking!</h3>" + "<hr color='red'>" +
         "<span class='spanLeft'>Full name: </span>" + "<span class='spanRight'>" + get_Name.value + "</span>" + "<br>"
@@ -110,6 +27,14 @@ let show_Information = () => {
         + "<span class='spanLeft'>Type of House: </span>" + "<span class='spanRight'> " + get_typeHouse.value + "</span>" + "<br>"
         + "<span class='spanLeft'>Type of Room:  </span>" + "<span class='spanRight'> " + get_typeRoom.value + "</span>" + "<br>";
 
+    if (get_typeHouse.value === "Villa") {
+        total_Price = 500 * parseInt(get_rentDay.value) * (1- get_discount.value);
+    } else if (get_typeHouse.value === "House") {
+        total_Price = 300 * parseInt(get_rentDay.value) *  (1- get_discount.value);
+    } else {
+        total_Price = 100 * parseInt(get_rentDay.value) *  (1- get_discount.value);
+    }
+    result +="<span class='spanLeft'>Total Price: </span>" + "<span class='spanRight'>" + total_Price + "</span>" + "<br>";
     if (get_Name.value.length === 0 || get_PP.value.length === 0 || get_birthday.value.length === 0 || get_email.value.length === 0 ||
         get_addr.value.length === 0 || get_typeCus.value.length === 0 || get_amount.value.length === 0 || get_rentDay.value.length === 0 ||
         get_typeHouse.value.length === 0 || get_typeRoom.value.length === 0) {
