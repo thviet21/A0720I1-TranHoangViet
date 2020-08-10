@@ -36,6 +36,7 @@ function doSomething() {
 }
 
 let showTotalPrice = () => {
+    // Giảm giá theo địa phương
     switch (get_country.value) {
         case 'Da Nang':
             discount_Country = 20;
@@ -49,6 +50,7 @@ let showTotalPrice = () => {
         default:
             discount_Country = 0;
     }
+    // Giảm giá theo số ngày thuê
     if (parseInt(get_rentDay.value) > 7){
         discount_RentDay = 30;
     }else if (parseInt(get_rentDay.value)>=5){
@@ -58,6 +60,7 @@ let showTotalPrice = () => {
     }else {
         discount_RentDay = 0;
     }
+    //Giảm giá theo loại khách hàng
     switch (get_typeCus.value) {
         case 'Diamond':
             discount_Cus = 15;
@@ -74,7 +77,10 @@ let showTotalPrice = () => {
         default:
             discount_Country = 0;
     }
+    //tính giảm giá
     discount = discount_Country + discount_RentDay + discount_Cus;
+
+    // Tính tổng tiền theo loại Nhà
     if (get_typeHouse.value === "Villa") {
         total_Price = (500 * parseInt(get_rentDay.value)) - discount;
     } else if (get_typeHouse.value === "House") {
@@ -82,7 +88,7 @@ let showTotalPrice = () => {
     } else {
         total_Price = (100 * parseInt(get_rentDay.value) )- discount;
     }
-    console.log(total_Price);
+    // console.log(total_Price);
     let result1 = "<h3>Priced Booking!</h3>" + "<hr color='red'>" +
         "<span class='spanLeft'>Total Price: </span>" + "<span class='spanRight'>" + total_Price + "</span>" + "<br>";
     document.getElementById("result").innerHTML = result1;
