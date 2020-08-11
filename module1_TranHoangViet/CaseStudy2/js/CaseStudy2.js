@@ -66,16 +66,16 @@ let showTotalPrice = () => {
             discount_Cus = 15;
             break;
         case 'Platium':
-            discount_Country = 10;
+            discount_Cus = 10;
             break;
         case "Gold":
-            discount_Country = 5;
+            discount_Cus = 5;
             break;
         case "Silver":
-            discount_Country = 2;
+            discount_Cus = 2;
             break;
         default:
-            discount_Country = 0;
+            discount_Cus = 0;
     }
     //tính giảm giá
     discount = discount_Country + discount_RentDay + discount_Cus;
@@ -110,12 +110,37 @@ let show_Information = () => {
         + "<span class='spanLeft'>Type of House: </span>" + "<span class='spanRight'> " + get_typeHouse.value + "</span>" + "<br>"
         + "<span class='spanLeft'>Type of Room:  </span>" + "<span class='spanRight'> " + get_typeRoom.value + "</span>" + "<br>";
 
-    if (get_Name.value.length === 0 || get_PP.value.length === 0 || get_birthday.value.length === 0 || get_email.value.length === 0 ||
-        get_addr.value.length === 0 || get_typeCus.value.length === 0 || get_amount.value.length === 0 || get_rentDay.value.length === 0 ||
-        get_typeHouse.value.length === 0 || get_typeRoom.value.length === 0) {
-        alert("Vui lòng nhập lại thông tin đầy đủ ạ!");
-        return false;
-    } else {
+    if (get_Name.value.length === 0){
+        alert("Vui lòng nhập vào tên:");
+    }
+    if (get_PP.value.length === 0 || get_PP.value <= 0 || get_PP.value.length > 10 ) {
+        alert("Vui lòng nhập vào Passport hoặc không bỏ trống hoặc không quá 10 kí tự!");
+    }
+    if (get_birthday.value.length === 0){
+        alert("Vui lòng nhập vào ngày sinh!");
+    }
+    if (get_email.value.length === 0){
+        alert("Vui lòng nhập vào Email!");
+    }
+    if (get_addr.value.length === 0 ){
+        alert("Vui lòng nhập vào Địa chỉ!");
+    }
+    if (get_typeCus.value.length === 0){
+        alert("Vui lòng chọn loại khách hàng!");
+    }
+    if (get_amount.value.length === 0 || get_amount.value < 0){
+        alert("Vui lòng nhập vào số người lớn hơn 0!");
+    }
+    if (get_rentDay.value.length === 0 || get_rentDay.value < 0){
+        alert("Vui lòng nhập vào số ngày thuê lớn hơn 0!");
+    }
+    if (get_typeHouse.value.length === 0 ){
+        alert("Vui lòng nhập vào loại Nhà muốn thuê!")
+    }
+    else if (get_typeRoom.value.length === 0) {
+        alert("Vui lòng nhập vào loại phòng!");
+    }
+    else {
         document.getElementById("result").innerHTML = result;
     }
 };
