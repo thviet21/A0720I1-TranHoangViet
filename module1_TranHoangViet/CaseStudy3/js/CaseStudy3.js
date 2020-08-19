@@ -17,7 +17,6 @@ let discount_RentDay ;
 let discount_Cus;
 
 
-
 function doSomething() {
     let get_Request = parseInt(prompt("Nhập vào trang bạn muốn chuyển đến!\n" +
         "1.Show Information Booking Room.\n" + "" +
@@ -129,6 +128,9 @@ let show_Information = () => {
         + "<span class='spanLeft'>Type of House: </span>" + "<span class='spanRight'> " + get_typeHouse.value + "</span>" + "<br>"
         + "<span class='spanLeft'>Type of Room:  </span>" + "<span class='spanRight'> " + get_typeRoom.value + "</span>" + "<br>";
     // console.log(result);
+    console.log(get_birthday.value)
+    let age = new Date().getFullYear() - get_birthday.value;
+    console.log(age);
     if (get_Name.value.length === 0){
         alert("Vui lòng nhập vào tên:");
     }
@@ -137,6 +139,9 @@ let show_Information = () => {
     }
     if (get_birthday.value.length === 0){
         alert("Vui lòng nhập vào ngày sinh!");
+    }
+    if ( age < 18){
+        alert("Xin lỗi bạn chưa đủ 18 tuổi")
     }
     if (get_email.value.length === 0){
         alert("Vui lòng nhập vào Email!");
