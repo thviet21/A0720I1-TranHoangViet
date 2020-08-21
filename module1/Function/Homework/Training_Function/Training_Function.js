@@ -39,7 +39,8 @@ function doSomething() {
             break;
         case 5:
             name = prompt("Nhập vào tên chòm sao");
-            //Đang làm
+            result = checkConstellation(name);
+            alert(result);
             break;
         default:
             alert("Nhập số từ 1 - 8 thôi :@");
@@ -66,5 +67,6 @@ function sum(a, b) {
 
 //Bài 5
 function checkConstellation(name) {
-
+    let getIndex = array.indexOf(name);
+    return result = array2[getIndex];
 }

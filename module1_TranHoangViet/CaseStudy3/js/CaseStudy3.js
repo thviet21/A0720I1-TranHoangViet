@@ -127,24 +127,24 @@ let show_Information = () => {
         + "<span class='spanLeft'>Rent Days: </span>" + "<span class='spanRight'> " + get_rentDay.value + "</span>" + "<br>"
         + "<span class='spanLeft'>Type of House: </span>" + "<span class='spanRight'> " + get_typeHouse.value + "</span>" + "<br>"
         + "<span class='spanLeft'>Type of Room:  </span>" + "<span class='spanRight'> " + get_typeRoom.value + "</span>" + "<br>";
-    // console.log(result);
-    console.log(get_birthday.value)
-    let age = new Date().getFullYear() - get_birthday.value;
-    console.log(age);
+
+
     if (get_Name.value.length === 0){
         alert("Vui lòng nhập vào tên:");
     }
     if (get_PP.value.length === 0 || get_PP.value <= 0 || get_PP.value.length > 10 ) {
         alert("Vui lòng nhập vào Passport hoặc không bỏ trống hoặc không quá 10 kí tự!");
     }
-    if (get_birthday.value.length === 0){
-        alert("Vui lòng nhập vào ngày sinh!");
+
+    if (get_birthday.value === ""){
+        alert("Vui lòng nhập vào Ngày sinh!");
     }
-    if ( age < 18){
-        alert("Xin lỗi bạn chưa đủ 18 tuổi")
-    }
-    if (get_email.value.length === 0){
-        alert("Vui lòng nhập vào Email!");
+    let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (get_email.value ===""){
+
+        alert("Vui lòng nhập vào Email")
+    } else if (!filter.test(get_email.value.value)){
+        alert("Email: Không đúng định dạng abc@def.xyz");
     }
     if (get_addr.value.length === 0 ){
         alert("Vui lòng nhập vào Địa chỉ!");
