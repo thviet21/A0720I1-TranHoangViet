@@ -43,6 +43,10 @@ function doSomething() {
             }
             get_Request = parseInt(prompt("Nhập vào ID của khách hàng muốn xóa"));
             deleteCustomer(get_Request);
+            alert("Danh sách khách hàng sau khi xóa");
+            for (let i = 0; i < arrayCustomer.length; i++) {
+                alert("Thông tin khách hàng thứ " + (i+1) +"\n" + arrayCustomer[i]);
+            }
             break;
         case 5:
             break;
@@ -53,7 +57,6 @@ function doSomething() {
 }
 let deleteCustomer = (index) =>{
     arrayCustomer.splice(index-1 , index);
-    alert(arrayCustomer);
 };
 let addNewCustomer = () => {
     resultCus = [
@@ -71,11 +74,11 @@ let addNewCustomer = () => {
         "Type Room: " + get_typeRoom.value
     ];
 
-
+    changName();
     if (checkValidate()){
         arrayCustomer.push(resultCus);
         alert("Thêm khách hàng thành công");
-    }else
+    }
 
     doSomething();
 };
