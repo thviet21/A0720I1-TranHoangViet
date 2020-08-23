@@ -1,0 +1,137 @@
+body {
+    background-image: url("../img/902480.jpg");
+    background-size: cover;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 54px;
+    margin-left: -8px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo > span {
+    font-family: cursive;
+    font-size: 17px;
+}
+#user {
+    float: right;
+    height: 54px;
+    margin-right: 20px;
+}
+.logo > img {
+    width: 19%;
+    float: left;
+    margin-top: -6px;
+    margin-left: -11px;
+}
+#aboutme{
+    margin-left: 30px;
+    padding: 30px;
+    color: white;
+    width: 40%;
+    float: left;
+    background-color: black;
+    box-shadow:  0 0 10px 10px #333333;
+}
+#bottom{
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#form{
+    background-color: rgba(255,246,244,0.64);
+    /*background-color: rgba(255,182,215,0.58);*/
+    float: left;
+    padding: 20px ;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+select{
+    width: 177px;
+}
+option{
+    text-align: center;
+}
+td{
+    margin-left: 20px;
+}
+#birthday{
+    width: 172px;
+}
+#submit{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    color:blue;
+    font-size: 20px;
+}
+table tr:nth-child(n) td:nth-child(even){
+    margin-left: 30px   ;
+}
+h3{
+    text-align: center;
+
+}
+
+.p_about{
+    font-family: monospace;
+    font-style: italic;
+
+}
+#result{
+    width: 40%;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(255,246,244,0.64);
+    font-family: "Goudy Old Style";
+    border: solid 2px black;
+}
+
+input,select{
+    border-radius: 10px;
+}
+.spanLeft{
+    margin-top: 20px;
+    margin-left:  120px;
+    font-weight: bold;
+}
+.spanRight{
+    margin-left: 20px;
+}
+
