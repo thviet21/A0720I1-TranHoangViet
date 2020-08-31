@@ -35,12 +35,12 @@ class People {
     saySomething(string){
         return this.string = string;
     }
-    eatApple(Apple){
-        Apple.weightApple -=1;
+    eatApple(apple){
+        apple.weightApple -=1;
         this.weight += 1;
     }
-    checkApple(Apple){
-        if (Apple.isEmpty()){
+    checkApple(apple){
+        if (apple.isEmpty()){
             alert("Đã ăn hết táo!");
         }
     }
