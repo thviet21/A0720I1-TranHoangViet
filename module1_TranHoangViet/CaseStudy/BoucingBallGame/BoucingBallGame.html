@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+
 </head>
 <body>
-$END$
+<style>
+    #myCanvas {
+        border: 5px solid black;
+    }
+</style>
+<canvas id="myCanvas" width="480" height="320">
+
+</canvas>
 </body>
+<script>
+    window.onload = function () {
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        let x = canvas.width / 2;
+        let y = canvas.height / 2;
+        let dx = 2;
+        let dy = -2;
+        draw();
+        function draw() {
+            ctx.clearRect(0,0,canvas.width, canvas.height);
+            ctx.beginPath();
+            ctx.arc(x,y,10,0,Math.PI*2);
+            ctx.fillStyle = "red";
+            ctx.fill();
+            ctx.closePath();
+            if (x+dx > 480){
+                dx = -dx;
+            }
+            if (x+dx <0){
+                dx = -dx;
+            }
+            if (y+dy > 320){
+                dy = -dy;
+            }
+            if (y+dy < 0){
+                dy = -dy;
+
+            }
+            x += dx;
+            y += dy;
+        }
+        setInterval(draw,10)
+    }
+</script>
 </html>
