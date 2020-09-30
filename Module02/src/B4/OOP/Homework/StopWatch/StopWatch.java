@@ -1,12 +1,12 @@
 package B4.OOP.Homework.StopWatch;
 
-import java.time.LocalTime;
+import java.util.Arrays;
 
 public class StopWatch {
-    private int startTime;
-    private int endTime;
+    private long startTime;
+    private long endTime;
 
-    public int getStartTime() {
+    public long getStartTime() {
         return startTime;
     }
 
@@ -14,7 +14,7 @@ public class StopWatch {
         this.startTime = startTime;
     }
 
-    public int getEndTime() {
+    public long getEndTime() {
         return endTime;
     }
 
@@ -23,17 +23,32 @@ public class StopWatch {
     }
 
     public StopWatch() {
+        startTime = System.currentTimeMillis();
     }
-    public LocalTime startTime(){
-        LocalTime localTime = LocalTime.now();
-        return localTime;
+    public long startTime(){
+        return startTime = System.currentTimeMillis();
     }
-    public LocalTime endTime(){
-        LocalTime localTime = LocalTime.now();
-        return localTime;
+    public long endTime(){
+        return endTime = System.currentTimeMillis();
     }
-    public int getElapsedTime(){
-        return 1;
+    public long getElapsedTime(){
+        long elapsedTime;
+        return elapsedTime = endTime - startTime;
     }
 
+    public static void main(String[] args) {
+
+        double[] array = new double[100000000];
+        for (int j = 0; j < 10000000; j++) {
+            array[j] = Math.random()*100000000;
+            j++;
+        }
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.startTime();
+        Arrays.sort(array);
+        stopWatch.endTime();
+        long miliseconds = stopWatch.getElapsedTime();
+        System.out.println("Thời gian thực hiện thuật toán: " + miliseconds);
+
+    }
 }
