@@ -1,4 +1,4 @@
-package B3.Array_Methods.CountCharInString;
+package B3.Array_Methods.Homework.CountCharInString;
 
 import java.util.Scanner;
 
