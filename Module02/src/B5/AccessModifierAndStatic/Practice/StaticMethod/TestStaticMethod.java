@@ -1,4 +1,4 @@
-package B5.AccessModifierAndStatic.Practice.StaticMethod.Student;
+package B5.AccessModifierAndStatic.Practice.StaticMethod;
 
 public class TestStaticMethod {
     public static void main(String args[]) {
