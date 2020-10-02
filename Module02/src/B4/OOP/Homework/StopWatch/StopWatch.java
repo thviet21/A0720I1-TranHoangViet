@@ -39,16 +39,15 @@ public class StopWatch {
     public static void main(String[] args) {
 
         double[] array = new double[100000000];
-        for (int j = 0; j < 10000000; j++) {
+        for (int j = 0; j < 100000000; j++) {
             array[j] = Math.random()*100000000;
-            j++;
         }
         StopWatch stopWatch = new StopWatch();
         stopWatch.startTime();
         Arrays.sort(array);
         stopWatch.endTime();
-        long miliseconds = stopWatch.getElapsedTime();
-        System.out.println("Thời gian thực hiện thuật toán: " + miliseconds);
+        long milliseconds = stopWatch.getElapsedTime();
+        System.out.println("Thời gian thực hiện thuật toán: " + milliseconds);
 
     }
 }
