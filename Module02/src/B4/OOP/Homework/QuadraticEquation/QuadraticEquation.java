@@ -3,15 +3,15 @@ package B4.OOP.Homework.QuadraticEquation;
 import java.util.Scanner;
 
 public class QuadraticEquation {
+
+    int bienA;
+    int bienB;
+    int bienC;
     public QuadraticEquation(int bienA, int bienB, int bienC) {
         this.bienA = bienA;
         this.bienB = bienB;
         this.bienC = bienC;
     }
-
-    int bienA;
-    int bienB;
-    int bienC;
 
     public int getBienA() {
         return bienA;

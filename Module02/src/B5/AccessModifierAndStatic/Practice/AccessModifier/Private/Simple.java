@@ -1,6 +1,6 @@
 package B5.AccessModifierAndStatic.Practice.AccessModifier.Private;
 
-public class Private {
+public class Simple {
 
     public static void main(String args[]){
 
@@ -13,12 +13,5 @@ public class Private {
     }
 
 
-
-}
-class A{
-
-    private int data=40;
-
-    private void msg(){System.out.println("Hello java");}
 
 }

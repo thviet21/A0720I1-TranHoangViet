@@ -7,9 +7,7 @@ public class AddElementInArray {
     static int[] array;
 
     public static void main(String[] args) {
-
         input();
-
         for (int i = 0; i < array.length; i++) {
             System.out.println((i + 1) + ". " + array[i]);
         }

@@ -45,7 +45,6 @@ public class MargeArray {
         System.out.println();
         System.out.print("Mảng sau khi gộp là: ");
         for (int i = 0; i < arrSum.length; i++) {
-
             System.out.print(arrSum[i] + "  ");
         }
     }
