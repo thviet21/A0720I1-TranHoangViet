@@ -1,4 +1,4 @@
-package _b2.loop_in_java.practice.prime;
+package _b2_loop_in_java.practice.prime;
 
 import java.util.Scanner;
 

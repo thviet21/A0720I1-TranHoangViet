@@ -1,4 +1,4 @@
-package _b3.array_methods.practice.passed_student;
+package _b3_array_methods.practice.passed_student;
 
 import java.util.Scanner;
 

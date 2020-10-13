@@ -1,4 +1,4 @@
-package _b1.introduction_java.practice.day_in_month;
+package _b1_introduction_java.practice.day_in_month;
 
 import java.util.Scanner;
 

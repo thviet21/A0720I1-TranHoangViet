@@ -1,4 +1,4 @@
-package _b1.introduction_java.homework.hello;
+package _b1_introduction_java.homework.hello;
 
 import java.util.Scanner;
 

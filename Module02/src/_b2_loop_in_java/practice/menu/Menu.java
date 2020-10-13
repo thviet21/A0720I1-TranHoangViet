@@ -1,4 +1,4 @@
-package _b2.loop_in_java.practice.menu;
+package _b2_loop_in_java.practice.menu;
 
 import java.util.Scanner;
 

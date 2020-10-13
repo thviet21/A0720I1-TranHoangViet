@@ -1,4 +1,4 @@
-package _b2.loop_in_java.homework.top20_pime;
+package _b2_loop_in_java.homework.top20_pime;
 
 public class Top20Prime {
 

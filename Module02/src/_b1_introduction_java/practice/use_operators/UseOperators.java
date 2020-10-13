@@ -1,4 +1,4 @@
-package _b1.introduction_java.practice.use_operators;
+package _b1_introduction_java.practice.use_operators;
 import java.util.Scanner;
 public class UseOperators {
     public static void main(String[] args) {

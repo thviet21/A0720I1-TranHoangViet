@@ -1,4 +1,4 @@
-package _b1.introduction_java.homework.changemoney;
+package _b1_introduction_java.homework.changemoney;
 
 import java.util.Scanner;
 

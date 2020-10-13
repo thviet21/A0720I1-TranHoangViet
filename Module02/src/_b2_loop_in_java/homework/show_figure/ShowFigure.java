@@ -1,4 +1,4 @@
-package _b2.loop_in_java.homework.show_figure;
+package _b2_loop_in_java.homework.show_figure;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

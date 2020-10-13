@@ -1,4 +1,4 @@
-package _b5.access_modifier_and_static.practice.static_method;
+package _b5_access_modifier_and_static.practice.static_method;
 
 public class TestStaticMethod {
     public static void main(String args[]) {

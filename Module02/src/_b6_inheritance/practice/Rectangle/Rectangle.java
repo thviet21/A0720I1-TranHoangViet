@@ -1,6 +1,5 @@
-package _b6.inheritance.practice.Rectangle;
-import B6.Inheritance.Practice.Shape.*;
-import _b6.inheritance.practice.Shape.Shape;
+package _b6_inheritance.practice.Rectangle;
+import _b6_inheritance.practice.Shape.Shape;
 
 public class Rectangle extends Shape {
     private double width = 1.0;

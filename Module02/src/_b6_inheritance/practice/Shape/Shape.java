@@ -1,4 +1,6 @@
-package _b6.inheritance.practice.Shape;
+package _b6_inheritance.practice.Shape;
+
+import _b7_abstract_interface.homework.interface_resizeable.Resizeable;
 
 public class Shape {
     private String color = "green";
@@ -35,4 +37,6 @@ public class Shape {
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
     }
+
+
 }

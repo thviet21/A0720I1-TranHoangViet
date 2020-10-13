@@ -1,4 +1,4 @@
-package _b5.access_modifier_and_static.homework.access_modifier;
+package _b5_access_modifier_and_static.homework.access_modifier;
 class Circle {
 
     private double radius ;

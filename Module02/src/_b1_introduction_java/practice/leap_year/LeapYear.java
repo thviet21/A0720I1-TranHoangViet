@@ -1,4 +1,4 @@
-package _b1.introduction_java.practice.leap_year;
+package _b1_introduction_java.practice.leap_year;
 
 import java.util.Scanner;
 

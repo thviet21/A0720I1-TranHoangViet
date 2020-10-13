@@ -1,6 +1,6 @@
-package _b6.inheritance.practice.Square;
+package _b6_inheritance.practice.Square;
 
-import _b6.inheritance.practice.Rectangle.Rectangle;
+import _b6_inheritance.practice.Rectangle.Rectangle;
 
 public class Square extends Rectangle {
     public Square() {

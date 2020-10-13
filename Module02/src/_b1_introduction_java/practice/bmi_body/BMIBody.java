@@ -1,4 +1,4 @@
-package _b1.introduction_java.practice.bmi_body;
+package _b1_introduction_java.practice.bmi_body;
 
 import java.util.Scanner;
 

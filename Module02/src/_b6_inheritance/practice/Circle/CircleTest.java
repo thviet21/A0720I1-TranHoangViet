@@ -1,4 +1,4 @@
-package _b6.inheritance.practice.Circle;
+package _b6_inheritance.practice.Circle;
 
 public class CircleTest {
 

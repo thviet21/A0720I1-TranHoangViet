@@ -1,4 +1,4 @@
-package _b2.loop_in_java.homework.prime_number_smaller100;
+package _b2_loop_in_java.homework.prime_number_smaller100;
 
 public class PrimeNumberSmaller100 {
     public static boolean checkPrime(int number) {

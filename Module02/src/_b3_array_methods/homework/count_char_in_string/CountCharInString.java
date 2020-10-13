@@ -1,4 +1,4 @@
-package _b3.array_methods.homework.count_char_in_string;
+package _b3_array_methods.homework.count_char_in_string;
 
 import java.util.Scanner;
 

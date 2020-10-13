@@ -1,4 +1,4 @@
-package _b3.array_methods.practice.change_c_to_f;
+package _b3_array_methods.practice.change_c_to_f;
 
 import java.util.Scanner;
 

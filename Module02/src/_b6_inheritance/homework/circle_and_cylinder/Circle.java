@@ -1,4 +1,4 @@
-package _b6.inheritance.homework.circle_and_cylinder;
+package _b6_inheritance.homework.circle_and_cylinder;
 
 public class Circle {
     private double radius;

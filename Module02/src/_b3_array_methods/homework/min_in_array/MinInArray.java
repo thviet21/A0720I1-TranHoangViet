@@ -1,4 +1,4 @@
-package _b3.array_methods.homework.min_in_array;
+package _b3_array_methods.homework.min_in_array;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package _b2.loop_in_java.practice.loan_interest_calculation;
+package _b2_loop_in_java.practice.loan_interest_calculation;
 
 import java.util.Scanner;
 

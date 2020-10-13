@@ -1,5 +1,5 @@
-package _b5.access_modifier_and_static.practice.access_modifier.protected_modifier.mypack;
-import _b5.access_modifier_and_static.practice.access_modifier.protected_modifier.pack.A;
+package _b5_access_modifier_and_static.practice.access_modifier.protected_modifier.mypack;
+import _b5_access_modifier_and_static.practice.access_modifier.protected_modifier.pack.A;
 
 
 class B extends A {

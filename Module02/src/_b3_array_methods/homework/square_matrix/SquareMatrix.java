@@ -1,4 +1,4 @@
-package _b3.array_methods.homework.square_matrix;
+package _b3_array_methods.homework.square_matrix;
 
 import java.util.Scanner;
 

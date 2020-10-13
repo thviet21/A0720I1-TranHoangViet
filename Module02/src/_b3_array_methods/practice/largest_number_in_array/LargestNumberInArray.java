@@ -1,4 +1,4 @@
-package _b3.array_methods.practice.largest_number_in_array;
+package _b3_array_methods.practice.largest_number_in_array;
 
 import java.util.Scanner;
 

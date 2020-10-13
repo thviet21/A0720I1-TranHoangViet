@@ -1,4 +1,4 @@
-package _b5.access_modifier_and_static.practice.access_modifier.default_modifier.mypack;
+package _b5_access_modifier_and_static.practice.access_modifier.default_modifier.mypack;
 
 //import B5.AccessModifierAndStatic.Practice.AccessModifier.Default.pack.A;
 

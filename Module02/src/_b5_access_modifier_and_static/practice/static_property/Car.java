@@ -1,4 +1,4 @@
-package _b5.access_modifier_and_static.practice.static_property;
+package _b5_access_modifier_and_static.practice.static_property;
 
 public class Car {
     private String name;

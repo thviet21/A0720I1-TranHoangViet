@@ -1,4 +1,4 @@
-package _b5.access_modifier_and_static.practice.access_modifier.private_modifier;
+package _b5_access_modifier_and_static.practice.access_modifier.private_modifier;
 
 class A{
 

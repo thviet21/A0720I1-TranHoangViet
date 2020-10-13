@@ -1,4 +1,4 @@
-package _b1.introduction_java.practice.system_time;
+package _b1_introduction_java.practice.system_time;
 
 import java.util.Date;
 

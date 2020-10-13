@@ -1,4 +1,4 @@
-package _b4.oop.homework.stop_watch;
+package _b4_oop.homework.stop_watch;
 
 import java.util.Arrays;
 

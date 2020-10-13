@@ -1,4 +1,4 @@
-package _b4.oop.homework.fan;
+package _b4_oop.homework.fan;
 
 public class Fan {
     static final int SLOW = 1;

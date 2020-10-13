@@ -1,4 +1,4 @@
-package _b1.introduction_java.homework.convertnumberstowords;
+package _b1_introduction_java.homework.convertnumberstowords;
 import java.util.Scanner;
 
 public class ConvertNumbersToWords {

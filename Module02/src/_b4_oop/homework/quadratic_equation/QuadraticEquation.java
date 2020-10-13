@@ -1,4 +1,4 @@
-package _b4.oop.homework.quadratic_equation;
+package _b4_oop.homework.quadratic_equation;
 
 import java.util.Scanner;
 

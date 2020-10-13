@@ -1,4 +1,4 @@
-package _b6.inheritance.practice.Square;
+package _b6_inheritance.practice.Square;
 
 public class SquareTest {
     public static void main(String[] args) {

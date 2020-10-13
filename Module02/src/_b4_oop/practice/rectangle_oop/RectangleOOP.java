@@ -1,4 +1,4 @@
-package _b4.oop.practice.rectangle_oop;
+package _b4_oop.practice.rectangle_oop;
 
 import java.util.Scanner;
 

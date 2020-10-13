@@ -1,4 +1,4 @@
-package _b1.introduction_java.practice.declare_variable;
+package _b1_introduction_java.practice.declare_variable;
 
 public class DeclareVariable {
     public static void main(String[] args) {

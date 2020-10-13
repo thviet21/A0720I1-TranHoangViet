@@ -1,4 +1,4 @@
-package _b6.inheritance.homework.point_and_movable_point;
+package _b6_inheritance.homework.point_and_movable_point;
 
 
 public class Point{

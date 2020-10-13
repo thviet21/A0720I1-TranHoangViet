@@ -1,4 +1,4 @@
-package _b6.inheritance.homework.point_2d_and_point3d;
+package _b6_inheritance.homework.point_2d_and_point3d;
 
 public class Point2D {
     private float x = 0.0f;

@@ -1,4 +1,4 @@
-package _b6.inheritance.practice.Rectangle;
+package _b6_inheritance.practice.Rectangle;
 
 public class RectangleTest {
     public static void main(String[] args) {

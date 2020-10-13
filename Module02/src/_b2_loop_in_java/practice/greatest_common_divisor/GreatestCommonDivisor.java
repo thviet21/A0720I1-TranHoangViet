@@ -1,4 +1,4 @@
-package _b2.loop_in_java.practice.greatest_common_divisor;
+package _b2_loop_in_java.practice.greatest_common_divisor;
 
 import java.util.Scanner;
 
