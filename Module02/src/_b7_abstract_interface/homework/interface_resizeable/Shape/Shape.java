@@ -2,7 +2,7 @@ package _b7_abstract_interface.homework.interface_resizeable.Shape;
 
 import _b7_abstract_interface.homework.interface_resizeable.Resizeable;
 
-public class Shape implements Resizeable {
+public abstract class Shape implements Resizeable {
     private String color = "green";
     private boolean filled = true;
 
@@ -40,6 +40,5 @@ public class Shape implements Resizeable {
 
 
     @Override
-    public void resize(double percent) {
-    }
+    public  abstract void resize(double percent) ;
 }
