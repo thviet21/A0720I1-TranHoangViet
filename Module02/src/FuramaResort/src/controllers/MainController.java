@@ -1,23 +1,23 @@
 package controllers;
 
-import models.House;
-import models.Room;
-import models.Villa;
+import commons.FileCSV;
+import models.*;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
-import java.util.Scanner;
+import javax.xml.ws.Service;
+import java.util.*;
+
+import static controllers.BookingController.addNewBooking;
+import static controllers.HouseController.showHouseServiceNameNotDupicate;
+import static controllers.RoomController.showRoomServiceNameNotDupicate;
+import static controllers.VillaController.showVillaServiceNameNotDupicate;
 
 public class MainController {
-    public static List<Villa> villaList = new ArrayList<>();
-    public static List<House> houseList = new ArrayList<>();
-    public static List<Room> roomList = new ArrayList<>();
-    static int choice;
+    public static List<Services> villaList = new ArrayList<>();
+    public static List<Services> houseList = new ArrayList<>();
+    public static List<Services> roomList = new ArrayList<>();
+    public static List<Customer> customerList = new ArrayList<>();
+    public static List<Customer> bookingList = new ArrayList<>();
+    static String choice;
     static Scanner scanner = new Scanner(System.in);
 
     public static void displayMainMenu() {
@@ -32,16 +32,35 @@ public class MainController {
                         "7.Exit\n");
 
                 System.out.println("Nhập vào lựa chọn của bạn: ");
-                choice = scanner.nextInt();
+                choice = scanner.nextLine();
                 switch (choice) {
-                    case 1:
+                    case "1":
                         addNewServices();
                         break;
-                    case 2:
-//                        showServices();
+                    case "2":
+                        showServices();
                         break;
-                    case 7:
+                    case "3":
+                        addNewCustomer();
+                        break;
+                    case "4":
+                        showInformationCustomer();
+                        break;
+                    case "5":
+                        addNewBooking();
+                        break;
+                    case "6":
+                        System.out.println("Chưa xong ^^");
+                        break;
+                    case "7":
+                        System.out.println("Chưa xong ^^");
+                        break;
+                    case "8":
+                        System.out.println("Chưa xong ^^");
+                        break;
+                    case "9":
                         System.exit(0);
+                        break;
                     default:
                         System.out.println("Nhập vào số từ 1~7! Enter để quay về main menu");
                         scanner.nextLine();
@@ -55,6 +74,7 @@ public class MainController {
             displayMainMenu();
         } catch (Exception e) {
             e.getMessage();
+            displayMainMenu();
         }
 
     }
@@ -69,12 +89,12 @@ public class MainController {
                         "4.Back to menu\n" +
                         "5.Exit\n ----------------\n Nhập lựa chọn: ");
 
-                int choiceNewService = scanner.nextInt();
+                String choiceNewService = scanner.nextLine();
                 switch (choiceNewService) {
-                    case 1:
-                        Villa villa = InputData.villaInput();
+                    case "1":
+                        Services villa = VillaController.villaInput();
                         villaList.add(villa);
-                        FileCSV.writeFileCSV(villaList);
+                        FileCSV.writeVillaFileCSV(villaList);
                         System.out.println("--------------");
                         System.out.println("Add " + villa.showInfo() + " \nthành công!");
                         System.out.println("Nhấn Enter để tiếp tục...");
@@ -83,8 +103,8 @@ public class MainController {
                         addNewServices();
 
                         break;
-                    case 2:
-                        House house = InputData.houseInput();
+                    case "2":
+                        House house = HouseController.houseInput();
                         houseList.add(house);
                         FileCSV.writeHouseFileCSV(houseList);
                         System.out.println("--------------");
@@ -94,8 +114,8 @@ public class MainController {
                         scanner.nextLine();
                         addNewServices();
                         break;
-                    case 3:
-                        Room room = InputData.roomInput();
+                    case "3":
+                        Room room = RoomController.roomInput();
                         roomList.add(room);
                         FileCSV.writeRoomFileCSV(roomList);
                         System.out.println("-------------");
@@ -105,10 +125,10 @@ public class MainController {
                         scanner.nextLine();
                         addNewServices();
                         break;
-                    case 4:
+                    case "4":
                         displayMainMenu();
                         break;
-                    case 5:
+                    case "5":
                         System.exit(0);
                         break;
                     default:
@@ -125,10 +145,118 @@ public class MainController {
     }
 
     public static void showServices() {
+        try {
+        System.out.println("---------------");
+        System.out.print("SHOW ALL SERVICES\n" +
+                "1. Show all Villa\n" +
+                "2. Show all House\n" +
+                "3. Show all Room\n" +
+                "4. Show all name of villa not duplicate\n" +
+                "5. Show all name of house not duplicate\n" +
+                "6. Show all name of room not duplicate\n" +
+                "7. Back to menu\n" +
+                "8. Exit\n" +
+                "Please choose the function: ");
+        String showServicesIndex = scanner.nextLine();
+            switch (showServicesIndex) {
+                case "1": {
+                    System.out.println("**************");
+                    for (Services villa : villaList) {
+                        System.out.println(villa.showInfo());
+                        System.out.println("------------");
+                    }
+                    System.out.println("Press ENTER to continue");
+                    scanner.nextLine();
+                    showServices();
+                    break;
+                }
+                case "2": {
+                    System.out.println("**************");
 
+                    for (Services house : houseList) {
+                        System.out.println(house.showInfo());
+                        System.out.println("------------");
+                    }
+                    System.out.println("Press ENTER to continue");
+                    scanner.nextLine();
+                    showServices();
+                    break;
+                }
+                case "3": {
+                    System.out.println("**************");
+                    for (Services room : roomList) {
+                        System.out.println(room.showInfo());
+                        System.out.println("------------");
+                    }
+                    System.out.println("Press ENTER to continue");
+                    scanner.nextLine();
+                    showServices();
+                    break;
+                }
+                case "4": {
+                    System.out.println("**************");
+
+                    showVillaServiceNameNotDupicate(villaList);
+                    showServices();
+                    break;
+                }
+                case "5": {
+                    System.out.println("**************");
+
+                    showHouseServiceNameNotDupicate(houseList);
+                    showServices();
+                    break;
+                }
+                case "6": {
+                    System.out.println("**************");
+                    showRoomServiceNameNotDupicate(roomList);
+                    showServices();
+                    break;
+                }
+                case "7": {
+                    displayMainMenu();
+                    break;
+                }
+                case "8": {
+                    System.exit(0);
+                    break;
+                }
+                default: {
+                    System.out.println("The index input is invalid. Please press ENTER to continue !!!");
+                    scanner.nextLine();
+                    showServices();
+                }
+            }
+
+        } catch (InputMismatchException e) {
+            System.out.println("Nhập vào không phải là số!");
+            System.out.println(e.getMessage());
+        } finally {
+            showServices();
+        }
     }
 
-    public static void main(String[] args) {
+
+    public static void addNewCustomer() {
+        Customer customer = CustomerController.inputCustomer();
+        customerList.add(customer);
+        FileCSV.writeCustomerFileCSV(customerList);
+        System.out.println("--------------");
+        System.out.println("Add " + customer.showInfor() + " \nthành công!");
+        System.out.println("Nhấn Enter để tiếp tục...");
+        scanner.skip("\n");
+        scanner.nextLine();
         displayMainMenu();
+    }
+
+    public static void showInformationCustomer() {
+        System.out.println("**************");
+        for (Customer customer : customerList) {
+            System.out.println(customer.showInfor());
+            System.out.println("------------");
+        }
+        System.out.println("Press ENTER to continue");
+        scanner.nextLine();
+        showServices();
     }
 }
