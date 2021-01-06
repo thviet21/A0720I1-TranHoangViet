@@ -11,7 +11,7 @@
     <title>Price Product Discount</title>
   </head>
   <body>
-  <form method="post" action="/discount_price_war_exploded/discouted-price" style="width: 300px; height: 250px; border: solid 1px black;">
+  <form method="post" action="discouted-price" style="width: 300px; height: 250px; border: solid 1px black;">
     <div style="margin-left: 50px">
       <h1>Discount Menu</h1>
       <label for="productdesc">Product Description:</label><br>

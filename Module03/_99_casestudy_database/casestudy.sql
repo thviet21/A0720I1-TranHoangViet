@@ -94,3 +94,72 @@ left join HopDongChiTiet on HopDongChiTiet.IDHopDong = HopDong10122019.IDHopDong
 left join DichVuDiKem on HopDongChiTiet.IDDichVuDiKem = DichVuDiKem.IDDichVuDiKem
 where HopDong01062019.IDDichVu is null
 group by HopDong10122019.IDHopDong;
+
+-- 13.	Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng. 
+-- (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng nhiều như nhau).
+
+select dichvudikem.iddichvudikem, 
+    dichvudikem.tendichvudikem ,
+    count(hopdongchitiet.idhopdong) as count
+    from hopdongchitiet 
+    join dichvudikem 
+    on hopdongchitiet.iddichvudikem = dichvudikem.iddichvudikem
+    group by hopdongchitiet.iddichvudikem 
+    
+    having count = (select count(hopdongchitiet.iddichvudikem) as count 
+    from hopdongchitiet
+    join dichvudikem
+    on hopdongchitiet.iddichvudikem = dichvudikem.iddichvudikem
+    group by hopdongchitiet.iddichvudikem  
+    order by count desc
+    limit 1);
+    
+-- 14. 
+select dichvudikem.iddichvudikem, 
+  dichvudikem.tendichvudikem,
+  count(hopdongchitiet.iddichvudikem) as so_lan
+    from khachhang 
+    join hopdong on khachhang.idkhachhang = hopdong.idkhachhang
+    join hopdongchitiet on hopdong.idhopdong = hopdongchitiet.idhopdong
+    join dichvudikem on hopdongchitiet.iddichvudikem = dichvudikem.iddichvudikem 
+    group by iddichvudikem having so_lan = 1
+    ;  
+    
+-- task 15
+    select nhanvien.idnhanvien, nhanvien.hoten, 
+    trinhdo.trinhdo, bophan.tenbophan, nhanvien.sdt, nhanvien.diachi, 
+    count(hopdong.idnhanvien) as so_hop_dong
+    from nhanvien
+    join trinhdo on nhanvien.idtrinhdo = trinhdo.idtrinhdo
+    join bophan on nhanvien.idbophan = bophan.idbophan
+    join hopdong on hopdong.idnhanvien = nhanvien.idnhanvien
+    where year(hopdong.ngaylamhopdong) > 2017 and year(hopdong.ngaylamhopdong) < 2020
+    group by idnhanvien having so_hop_dong < 4;
+    
+-- task 16
+SET SQL_SAFE_UPDATES = 0; 
+    delete FROM nhanvien 
+	WHERE nhanvien.idnhanvien 
+	not IN (SELECT hopdong.idnhanvien 
+    FROM hopdong 
+    WHERE year(hopdong.ngaylamhopdong) BETWEEN 2017 and 2019
+	 );
+
+-- task 17
+
+UPDATE khachhang
+	SET khachhang.idloaikhach = 1
+	WHERE khachhang.idloaikhach = 2 and khachhang.idloaikhach 
+    IN (SELECT hopdong.idkhachhang 
+    FROM hopdong WHERE hopdong.tongtien>= 1500 and year(hopdong.ngaylamhopdong) = 2019
+	 );
+     
+     
+-- task 18
+	DELETE FROM khachhang 
+	  WHERE khachhang.idkhachhang 
+      in (SELECT hopdong.idkhachhang 
+	  FROM hopdong 
+	  WHERE year(hopdong.ngaylamhopdong) < 2016
+	  );
+    

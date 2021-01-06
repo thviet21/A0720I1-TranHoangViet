@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a7f3567c-d138-4d6f-b9ed-e90dce7ebaba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/web/jsp/discouted-price.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/person_information/src/controller/ShowInformationServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/person_information/src/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/person_information/web/jsp/input-information.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/person_information/web/jsp/output-information.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/currency_converted/web/jsp/converted.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/library_simple/web/jsp/library_simple.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice/library_simple/web/jsp/translate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module02/src/_b8_cleancode_refactor/homework/cleancode_refactoring" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module02/src/_b8_cleancode_refactor/homework/cleancode_refactoring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module02/src/_b8_cleancode_refactor/practice" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module02/src/_b8_cleancode_refactor/practice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/out/artifacts/discount_price_war_exploded/WEB-INF/classes/DiscountPriceServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/out/artifacts/discount_price_war_exploded/WEB-INF/classes/DiscountPriceServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/out/artifacts/discount_price_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/out/artifacts/discount_price_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/out/production/discount_price/DiscountPriceServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/out/production/discount_price/DiscountPriceServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/src/DiscountPriceServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/src/DiscountPriceServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../_b8_java_servlet/homework/discount_price/web/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\A0720I1_Tran_Hoang_Viet\Module03\_b9_jsp_jstl\homework\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mbGhe7Js3wRsYOHzsVp49UZyMa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="homework" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="homework" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.41" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="homework:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/homework_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="homework:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7f3567c-d138-4d6f-b9ed-e90dce7ebaba" name="Default Changelist" comment="" />
+      <created>1609754998029</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609754998029</updated>
+      <workItem from="1609755002642" duration="176000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="431" y="126" key="FileChooserDialogImpl" timestamp="1609755177205">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="431" y="126" key="FileChooserDialogImpl/0.0.1304.768@0.0.1304.768" timestamp="1609755177205" />
+    <state x="34" y="0" key="new project wizard" timestamp="1609755178606">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="34" y="0" key="new project wizard/0.0.1304.768@0.0.1304.768" timestamp="1609755178606" />
+  </component>
+</project>

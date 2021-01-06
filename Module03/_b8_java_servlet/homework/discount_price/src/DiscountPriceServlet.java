@@ -9,19 +9,21 @@ import java.io.PrintWriter;
 @WebServlet(name = "DiscountPriceServlet", urlPatterns = "/discouted-price")
 public class DiscountPriceServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         String getDisc = request.getParameter("productdesc");
         String getPrice = request.getParameter("productprice");
         String getDiscount = request.getParameter("productdiscount");
 
         float amountDiscount = Float.parseFloat(getPrice) * Float.parseFloat(getDiscount);
         float priceDiscounted = Float.parseFloat(getPrice) - amountDiscount;
+        request.setAttribute("descProduct",getDisc);
+        request.setAttribute("amountDiscount",amountDiscount);
+        request.setAttribute("priceDiscountde",priceDiscounted);
+        request.getRequestDispatcher("jsp/discouted-price.jsp").forward(request,response);
 
-        PrintWriter printWriter = response.getWriter();
-        printWriter.append("<html><head><title>Discount Price </title><meta charset=\"UTF-8\"></head><body>").append("<h1>Amount Discount: "
-                + amountDiscount + "</h1>").append("<h1>Price After Discount: " + priceDiscounted + "</h1>").append("</body></html>");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.getRequestDispatcher("jsp/index.jsp").forward(request,response);
     }
 }
