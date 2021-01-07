@@ -6,6 +6,7 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="HienThiDSKhachHang" />
+          <element id="dir-copy" path="D:/apache-tomcat-9.0.41" />
         </element>
         <element id="directory" name="lib">
           <element id="file-copy" path="$PROJECT_DIR$/../../../98_CorelNoteANDBaoCaoTuan/TOMCAT/apache-tomcat-9.0.41/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" />
@@ -14,6 +15,7 @@
           <element id="file-copy" path="C:/apache-tomcat-9.0.26/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../commons-fileupload-1.4-bin/commons-fileupload-1.4.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../commons-io-2.8.0/commons-io-2.8.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/commons-fileupload-1.4.jar" />
         </element>
       </element>
     </root>

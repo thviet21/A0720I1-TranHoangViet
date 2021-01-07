@@ -17,11 +17,12 @@ import java.util.List;
 @WebServlet(name = "ShowCus_Servlet", urlPatterns = "/list")
 public class ShowCus_Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         request.getRequestDispatcher("jsp/showCus.jsp").forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        request.setCharacterEncoding("UTF-8");
+
 //        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd");
 
 //        List<Customer> myCustomer = new ArrayList<>();

@@ -23,6 +23,7 @@ import java.util.Map;
 @WebServlet(name = "RegisterServlet", urlPatterns = "/register")
 public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         boolean isMultiPart = ServletFileUpload.isMultipartContent(request);
         Map<String, String> forms = new HashMap<>();
         if (isMultiPart) {
