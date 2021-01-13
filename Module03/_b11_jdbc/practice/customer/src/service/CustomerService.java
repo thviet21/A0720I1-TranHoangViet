@@ -15,6 +15,6 @@ public interface CustomerService {
 
     void remove(int id);
 
-    List<Customer> findByCountry(String country);
+    List<Customer> findByName(String name);
 
 }

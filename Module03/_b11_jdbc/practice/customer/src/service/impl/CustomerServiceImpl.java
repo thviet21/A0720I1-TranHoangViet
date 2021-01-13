@@ -27,7 +27,7 @@ public class CustomerServiceImpl implements CustomerService {
     public List<Customer> findAll() {
         List<Customer> customerList = new ArrayList<>();
         try {
-            customerList = customerDAO.getAllCustomerSorted();
+            customerList = customerDAO.getAllCustomer();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -73,9 +73,9 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public List<Customer> findByCountry(String country) {
+    public List<Customer> findByName(String name) {
         try {
-            return customerDAO.findByCountry(country);
+            return customerDAO.getAllCustomer();
         } catch (SQLException e) {
             e.printStackTrace();
         }

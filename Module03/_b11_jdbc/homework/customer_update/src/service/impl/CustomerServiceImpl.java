@@ -14,10 +14,10 @@ import java.util.stream.Collectors;
 
 public class CustomerServiceImpl implements CustomerService {
 
-//    public static Map<Integer,Customer> customerMap;
+    //    public static Map<Integer,Customer> customerMap;
     private ICustomerDAO customerDAO = new CustomerDAOImpl();
 
-//    static {
+    //    static {
 //        customerMap =new HashMap<>();
 //        customerMap.put(1,new Customer(1,"Dat","datmaster@codegym","Dalat"));
 //        customerMap.put(2,new Customer(2,"Nam","Nam2000@codegym","Dalat"));

@@ -147,7 +147,7 @@ SET SQL_SAFE_UPDATES = 0;
 
 -- task 17
 
-UPDATE khachhang
+UPDATE khachhangcustomer
 	SET khachhang.idloaikhach = 1
 	WHERE khachhang.idloaikhach = 2 and khachhang.idloaikhach 
     IN (SELECT hopdong.idkhachhang 
