@@ -8,8 +8,8 @@
           <element id="module-output" name="casestudy_jsp_servlet" />
         </element>
         <element id="directory" name="lib">
-          <element id="file-copy" path="D:/mysql-connector-java-8.0.22.jar" />
-          <element id="file-copy" path="D:/jstl-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/mysql-connector-java-8.0.23.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/jstl-1.2.jar" />
         </element>
       </element>
     </root>

@@ -82,10 +82,6 @@
             </c:forEach>
         </table>
     </form>
-
-    <button class="btn btn-light">
-        <a href="services">Quay về danh sách dịch vụ</a>
-    </button>
 </div>
 </body>
 </html>
