@@ -20,7 +20,7 @@
         <table class="table">
             <tr>
                 <td scope="row">Mã khách hàng</td>
-                <td><input type="text" name="idCus" value="${customer.idCus}"></td>
+                <td><input readonly type="text" name="idCus" value="${customer.idCus}"></td>
             </tr>
             <tr>
                 <td scope="row">Loại khách</td>
@@ -74,7 +74,7 @@
 
             <a class="glyphicon glyphicon-log-out text-dark" href="customers"> Quay lại trang danh sách khách hàng</a>
         </button>
-        <input type="hidden" name="action" value="edit">
+<%--        <input type="hidden" name="action" value="edit">--%>
     </form>
 </div>
 </body>

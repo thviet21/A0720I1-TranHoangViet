@@ -7,10 +7,7 @@ import service.CustomerService;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class CustomerServiceImpl implements CustomerService {
 
@@ -81,4 +78,20 @@ public class CustomerServiceImpl implements CustomerService {
         }
         return null;
     }
+
+    @Override
+    public Customer getUserById(int id){
+        return customerDAO.getUserById(id);
+    }
+
+    @Override
+    public void insertUserStore(Customer customer) throws SQLException {
+        try {
+            customerDAO.insertUserStore(customer);
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
 }

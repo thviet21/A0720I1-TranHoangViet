@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="tranhoangviet_a0720i1_exam_module3:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/tranhoangviet_a0720i1_exam_module3_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="tranhoangviet_a0720i1_exam_module3" />
+          <element id="dir-copy" path="D:/apache-tomcat-9.0.41" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="D:/jstl-1.2.jar" />
+          <element id="file-copy" path="D:/mysql-connector-java-8.0.22.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="tranhoangviet_a0720i1_exam_module3/web/Web" />
+    </root>
+  </artifact>
+</component>

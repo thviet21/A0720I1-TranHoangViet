@@ -1,6 +1,7 @@
 package dao;
 
 import model.Customer;
+import model.KieuThue;
 import model.Service;
 
 import java.sql.SQLException;
@@ -18,4 +19,6 @@ public interface IServiceDAO {
     boolean updateService(Service service) throws SQLException;
 
     List<Service> findByName(String name) throws SQLException;
+
+    List<KieuThue> getAllKieuThue() throws SQLException;
 }
