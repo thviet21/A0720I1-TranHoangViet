@@ -3,6 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Module01/Git &amp; HTML/Baitap/GitProject/GitProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Module02/src/_b8_cleancode_refactor/homework/cleancode_refactoring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Module02/src/_b8_cleancode_refactor/practice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Module02/src/_b8_cleancode_refactor/practice/refactoring_divisionvariable" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Module02/src/_b8_cleancode_refactor/practice/refactoring_methods" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/module1/Git &amp; HTML/Baitap/GitProject/GitProject" vcs="Git" />
   </component>
 </project>

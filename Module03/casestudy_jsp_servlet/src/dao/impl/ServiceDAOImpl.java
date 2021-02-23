@@ -2,6 +2,7 @@ package dao.impl;
 
 import dao.IServiceDAO;
 import model.Customer;
+import model.KieuThue;
 import model.Service;
 import utils.DBConnection;
 
@@ -17,6 +18,7 @@ public class ServiceDAOImpl implements IServiceDAO {
     private static final String INSERT_SERVICE_SQL = "INSERT INTO dichvu (tendichvu, dientich, sotang, songuoitoida, chiphithue, idkieuthue, idloaidichvu, trangthai) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
     private static final String SELECT_SERVICE_BY_ID = "Select * from dichvu where iddichvu = ?";
     private static final String SELECT_ALL_SERVICE = "Select * from dichvu order by iddichvu";
+    private static final String SELECT_ALL_KIEU_THUE = "Select * from kieuthue";
     private static final String DELETE_SERVICE_BY_ID = "Delete from dichvu where iddichvu = ?";
     private static final String UPDATE_SERVICE = "Update dichvu set tendichvu = ?, dientich = ?, sotang = ?, songuoitoida = ?, chiphithue = ?,idkieuthue = ?, idloaidichvu = ?,trangthai = ?   where iddichvu = ?";
     private static final String SELECT_SERVICE_BY_NAME = "Select * from dichvu where tendichvu = ?";
@@ -126,5 +128,19 @@ public class ServiceDAOImpl implements IServiceDAO {
             serviceList.add(new Service(idService,nameService,areaUse,floorTotal,maxGuest,priceRent,typeRent,typeService,statusService));
         }
         return serviceList;
+    }
+
+    @Override
+    public List<KieuThue> getAllKieuThue() throws SQLException {
+        List<KieuThue> kieuThues = new ArrayList<>();
+        Connection connection = DBConnection.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_KIEU_THUE);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+            int id = resultSet.getInt("idkieuthue");
+            String name = resultSet.getString("tenkieuthue");
+            kieuThues.add(new KieuThue(id, name));
+        }
+        return kieuThues;
     }
 }

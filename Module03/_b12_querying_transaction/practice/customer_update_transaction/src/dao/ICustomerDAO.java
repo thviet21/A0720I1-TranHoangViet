@@ -19,4 +19,13 @@ public interface ICustomerDAO {
     public List<Customer> findByCountry(String country) throws SQLException;
 
     public List<Customer> getAllCustomerSorted() throws SQLException;
+
+    public Customer getUserById(int id) ;
+
+    public void insertUserStore(Customer customer) throws SQLException;
+
+    public  void addUserTransaction(Customer customer, int[] permision);
+
+    public void insertUpdateWithoutTransaction();
+    public void insertUpdateUseTransaction();
 }

@@ -34,24 +34,26 @@
         </div>
         <p>
             <button class="btn btn-info">
-                <a href="customers?action=create" class="text-dark">Thêm mới dịch vụ</a>
+                <a href="services?action=create" class="text-dark">Thêm mới dịch vụ</a>
             </button>
         </p>
         <table class="table table-light table-striped table-hover">
             <tr>
-                <th scope="col">Mã dịch vụ</th>
+                <th scope="col"></th>
                 <th scope="col">Tên dịch vụ</th>
                 <th scope="col">Diện tích</th>
                 <th scope="col">Số tầng</th>
-                <th scope="col">Số lượng tối đa</th>
-                <th scope="col">Giá thuê    </th>
-                <th scope="col">Sửa</th>
-                <th scope="col">Xóa</th>
+                <th scope="col">Số lượng <br> tối đa</th>
+                <th scope="col">Giá thuê</th>
+                <th scope="col"></th>
             </tr>
             <c:forEach items="${serviceList}" var="service">
                 <tr>
                     <td>
-                        <a href="services?action=view&idService=${service.idService}">${service.idService}</a>
+                        <button class="btn btn-primary">
+                            <a href="services?action=view&idService=${service.idService}" class="text-dark">                            Xem thông tin
+                            </a>
+                        </button>
                     </td>
                     <td>
                             ${service.nameService}
@@ -69,14 +71,10 @@
                             ${service.priceRent}
                     </td>
                     <td>
-                        <button class="btn btn-warning">
-                            <a href="services?action=edit&idService=${service.idService}">Sửa dịch vụ</a>
-                        </button>
-                    </td>
-                    <td>
-                        <button class="btn btn-danger">
-                            <a href="services?action=delete&idService=${service.idService}">Xóa dịch vụ</a>
-                        </button>
+
+                        <a class="btn btn-warning" href="services?action=edit&idService=${service.idService}">Sửa</a>
+                        <a class="btn btn-danger" href="services?action=delete&idService=${service.idService}">Xóa</a>
+
                     </td>
                 </tr>
             </c:forEach>

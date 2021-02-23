@@ -2,6 +2,7 @@ package service;
 
 import model.Customer;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface CustomerService {
@@ -16,6 +17,10 @@ public interface CustomerService {
     void remove(int id);
 
     List<Customer> findByCountry(String country);
+
+    public Customer getUserById(int id) throws SQLException;
+
+    public void insertUserStore(Customer customer) throws SQLException;
 
 
 }

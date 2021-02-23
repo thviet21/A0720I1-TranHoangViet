@@ -39,7 +39,7 @@
                 <a class="nav-link" href="customers">Customers</a>
             </li>
             <li class="nav-item active p-1">
-                <a class="nav-link" href="service">Services</a>
+                <a class="nav-link" href="services">Services</a>
             </li>
             <li class="nav-item active p-1">
                 <a class="nav-link" href="contact">Contact</a>

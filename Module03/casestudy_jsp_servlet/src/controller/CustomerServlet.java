@@ -59,7 +59,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void showEditCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        int id = Integer.parseInt(request.getParameter("id"));
+        int id = Integer.parseInt(request.getParameter("idCus"));
         Customer customer = customerService.findById(id);
         request.setAttribute("customer", customer);
         request.getRequestDispatcher("jsp/edit_customer.jsp").forward(request,response);

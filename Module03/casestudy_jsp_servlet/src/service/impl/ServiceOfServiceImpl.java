@@ -2,6 +2,7 @@ package service.impl;
 
 import dao.IServiceDAO;
 import dao.impl.ServiceDAOImpl;
+import model.KieuThue;
 import model.Service;
 import service.IServiceService;
 
@@ -76,5 +77,18 @@ public class ServiceOfServiceImpl implements IServiceService {
             e.printStackTrace();
         }
         return serviceList;
+    }
+
+    @Override
+    public List<KieuThue> getAllKieuThue(){
+        List<KieuThue> kieuThues = new ArrayList<>();
+        try {
+            kieuThues = this.serviceDAO.getAllKieuThue();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return kieuThues;
     }
 }
