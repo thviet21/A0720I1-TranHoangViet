@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="dictionary_simple:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c4bd8266-4604-4384-b1a1-66fbb924559c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../.idea/artifacts/Java_Servlet_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/artifacts/_b8_java_servlet_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_b7_bootstrap/homework/Gallery/Gallery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_b7_bootstrap/homework/Gallery/Gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_b7_bootstrap/homework/Landing_page/landing_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../_b7_bootstrap/homework/Landing_page/landing_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../currency_converter/src/CurrencyConverterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DictionaryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple_hello/src/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../time_system/src/Servlet_timesystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../linkbootstrap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module02/src/_b8_cleancode_refactor/homework/cleancode_refactoring" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module02/src/_b8_cleancode_refactor/homework/cleancode_refactoring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module02/src/_b8_cleancode_refactor/practice" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module02/src/_b8_cleancode_refactor/practice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_b6_layout_css/homework/facebook_interface/facebook_interface.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_b6_layout_css/homework/facebook_interface/facebook_interface.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\A0720I1_Tran_Hoang_Viet\Module03\_b8_java_servlet\practice\dictionary_simple\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1m8ldtYxtklBp7k6bVuVYdHJZiK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.41" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="dictionary_simple:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/dictionary_simple_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_41_dictionary_simple" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="dictionary_simple:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4bd8266-4604-4384-b1a1-66fbb924559c" name="Default Changelist" comment="" />
+      <created>1608883189531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608883189531</updated>
+      <workItem from="1608883194415" duration="1965000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="431" y="126" key="FileChooserDialogImpl" timestamp="1608885175652">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="431" y="126" key="FileChooserDialogImpl/0.0.1304.768@0.0.1304.768" timestamp="1608885175652" />
+    <state width="862" height="192" key="GridCell.Tab.0.bottom" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.0.bottom/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.0.center" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.0.center/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.0.left" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.0.left/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.0.right" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.0.right/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.1.bottom" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.1.bottom/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.1.center" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.1.center/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.1.left" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.1.left/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.1.right" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.1.right/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.2.bottom" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.2.bottom/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.2.center" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.2.center/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.2.left" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.2.left/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state width="862" height="192" key="GridCell.Tab.2.right" timestamp="1608885180762">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="862" height="192" key="GridCell.Tab.2.right/0.0.1304.768@0.0.1304.768" timestamp="1608885180762" />
+    <state x="34" y="0" key="new project wizard" timestamp="1608885177091">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="34" y="0" key="new project wizard/0.0.1304.768@0.0.1304.768" timestamp="1608885177091" />
+  </component>
+</project>
