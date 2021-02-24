@@ -10,12 +10,6 @@
     <list default="true" id="524e8806-2347-4faa-8da4-153c2b3d5e30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Module02/src/_b8_cleancode_refactor/homework/cleancode_refactoring" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module02/src/_b8_cleancode_refactor/homework/cleancode_refactoring" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Module02/src/_b8_cleancode_refactor/practice" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module02/src/_b8_cleancode_refactor/practice" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_greeting_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/spring_greeting_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_greeting_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_greeting_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_greeting_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/spring_greeting_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20324005" />
@@ -228,11 +222,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -253,6 +242,7 @@
       <workItem from="1613961141185" duration="1641000" />
       <workItem from="1613965655317" duration="17000" />
       <workItem from="1613998067746" duration="736000" />
+      <workItem from="1614170653886" duration="60000" />
     </task>
     <servers />
   </component>
@@ -268,10 +258,10 @@
       <screen x="0" y="0" width="1302" height="768" />
     </state>
     <state x="105" y="39" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1302.768@0.0.1302.768" timestamp="1613998307429" />
-    <state x="431" y="139" key="FileChooserDialogImpl" timestamp="1613965670413">
+    <state x="431" y="139" key="FileChooserDialogImpl" timestamp="1614170722035">
       <screen x="0" y="0" width="1302" height="768" />
     </state>
-    <state x="431" y="139" key="FileChooserDialogImpl/0.0.1302.768@0.0.1302.768" timestamp="1613965670413" />
+    <state x="431" y="139" key="FileChooserDialogImpl/0.0.1302.768@0.0.1302.768" timestamp="1614170722035" />
     <state width="860" height="192" key="GridCell.Tab.0.bottom" timestamp="1613998813142">
       <screen x="0" y="0" width="1302" height="768" />
     </state>
