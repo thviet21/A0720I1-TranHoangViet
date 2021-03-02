@@ -15,6 +15,7 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.3.17.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.3.17.RELEASE" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="upload_file.main/web/Web Gradle : upload_file-1.0-SNAPSHOT.war" />
