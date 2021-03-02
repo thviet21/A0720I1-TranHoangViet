@@ -8,16 +8,20 @@
 <h2>Submitted Employee Information</h2>
 <table>
     <tr>
-        <th>Name :</th>
-        <td>${name}</td>
+        <th>Language :</th>
+        <td>${language}</td>
     </tr>
     <tr>
-        <th>ID :</th>
-        <td>${id}</td>
+        <th>Page Size :</th>
+        <td>${pageSize}</td>
     </tr>
     <tr>
-        <th>Contact Number :</th>
-        <td>${contactNumber}</td>
+        <th>Spammer:</th>
+        <td>${spamFilter}</td>
+    </tr>
+    <tr>
+        <th>Signature:</th>
+        <td>${signature}</td>
     </tr>
 </table>
 </body>
