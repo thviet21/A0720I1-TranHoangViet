@@ -32,18 +32,18 @@ public class ConfigEmailController {
     @GetMapping("/")
     public String showForm(Model model){
         model.addAttribute("configEmail",new ConfigEmail());
+        model.addAttribute("languageList",languageList);
+        model.addAttribute("pageSizeList",pageSizeList);
         return "home";
     }
 
     @PostMapping("/created")
     public String saveConfig(@ModelAttribute ConfigEmail configEmail,Model model ){
-
-        model.addAttribute("language", configEmail.getLanguage());
+        model.addAttribute("language",configEmail.getLanguage());
         model.addAttribute("pageSize", configEmail.getPageSize());
         model.addAttribute("spamFilter", configEmail.isSpamFilter());
         model.addAttribute("signature", configEmail.getSignature());
-        model.addAttribute("languageList",languageList);
-        model.addAttribute("pageSizeList",pageSizeList);
-        return "result";
+        return "created";
     }
+
 }

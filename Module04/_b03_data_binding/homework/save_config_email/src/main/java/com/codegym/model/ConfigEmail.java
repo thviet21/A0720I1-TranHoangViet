@@ -1,34 +1,34 @@
 package com.codegym.model;
 
 public class ConfigEmail {
-    private String[] language;
-    private int[] pageSize;
+    private String language;
+    private int pageSize;
     private boolean spamFilter;
     private String signature;
 
     public ConfigEmail() {
     }
 
-    public ConfigEmail(String[] language, int[] pageSize, boolean spamFilter, String signature) {
+    public ConfigEmail(String language, int pageSize, boolean spamFilter, String signature) {
         this.language = language;
         this.pageSize = pageSize;
         this.spamFilter = spamFilter;
         this.signature = signature;
     }
 
-    public String[] getLanguage() {
+    public String getLanguage() {
         return language;
     }
 
-    public void setLanguage(String[] language) {
+    public void setLanguage(String language) {
         this.language = language;
     }
 
-    public int[] getPageSize() {
+    public int getPageSize() {
         return pageSize;
     }
 
-    public void setPageSize(int[] pageSize) {
+    public void setPageSize(int pageSize) {
         this.pageSize = pageSize;
     }
 
