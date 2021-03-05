@@ -6,7 +6,9 @@ import com.codegym.services.CustomerServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
@@ -27,10 +29,43 @@ public class CustomerController {
     }
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, RedirectAttributes redirectAttributes) {
 
         List<Customer> customerList = customerService.findAll();
         model.addAttribute("customers", customerList);
+        redirectAttributes.addFlashAttribute("success", "Tạo mới customer thành công!");
         return "index";
+    }
+
+    @GetMapping("/customer/{id}/edit")
+    public String edit(@PathVariable int id, Model model) {
+        model.addAttribute("customer", customerService.findById(id));
+        return "edit";
+    }
+
+    @PostMapping("/customer/update")
+    public String update(Customer customer) {
+        customerService.update(customer.getId(), customer);
+        return "redirect:/";
+    }
+
+
+    @GetMapping("/customer/{id}/delete")
+    public String delete(@PathVariable int id, Model model) {
+        model.addAttribute("customer", customerService.findById(id));
+        return "delete";
+    }
+
+    @PostMapping("/customer/delete")
+    public String delete(Customer customer, RedirectAttributes redirect) {
+        customerService.remove(customer.getId());
+        redirect.addFlashAttribute("success", "Removed customer successfully!");
+        return "redirect:/";
+    }
+
+    @GetMapping("/customer/{id}/view")
+    public String view(@PathVariable int id, Model model) {
+        model.addAttribute("customer", customerService.findById(id));
+        return "/view";
     }
 }
