@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0e676f78-3824-4bda-8019-58aef00b1e7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../Module02/src/_b8_cleancode_refactor/homework/cleancode_refactoring" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module02/src/_b8_cleancode_refactor/homework/cleancode_refactoring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module02/src/_b8_cleancode_refactor/practice" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module02/src/_b8_cleancode_refactor/practice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_b04_views_thymleaf/homeworks/products/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_b04_views_thymleaf/homeworks/products/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="blog_jpa_hibernate" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1pTbROJ4foN2GJrS4qhWa4BSkTO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.31149426" />
+  </component>
+  <component name="RunManager">
+    <configuration name="BlogJpaHibernateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog_jpa_hibernate.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.codegym.blog_jpa_hibernate.BlogJpaHibernateApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e676f78-3824-4bda-8019-58aef00b1e7f" name="Default Changelist" comment="" />
+      <created>1615210018206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615210018206</updated>
+      <workItem from="1615210023037" duration="236000" />
+      <workItem from="1615210311681" duration="248000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="243" y="43" key="#Project_Structure" timestamp="1615210234729">
+      <screen x="0" y="0" width="1302" height="768" />
+    </state>
+    <state x="243" y="43" key="#Project_Structure/0.0.1302.768@0.0.1302.768" timestamp="1615210234729" />
+    <state x="430" y="125" key="FileChooserDialogImpl" timestamp="1615210557590">
+      <screen x="0" y="0" width="1302" height="768" />
+    </state>
+    <state x="430" y="125" key="FileChooserDialogImpl/0.0.1302.768@0.0.1302.768" timestamp="1615210557590" />
+    <state x="33" y="86" key="new project wizard" timestamp="1615210558343">
+      <screen x="0" y="0" width="1302" height="768" />
+    </state>
+    <state x="33" y="86" key="new project wizard/0.0.1302.768@0.0.1302.768" timestamp="1615210558343" />
+  </component>
+</project>
