@@ -1,4 +1,4 @@
-package codegym.controller;
+    package codegym.controller;
 
 import codegym.model.Product;
 import codegym.service.ProductService;
@@ -66,4 +66,5 @@ public class ProductController {
         model.addAttribute("product", productService.findById(id));
         return "view";
     }
+
 }
