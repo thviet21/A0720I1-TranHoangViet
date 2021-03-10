@@ -50,20 +50,20 @@ public class BlogCustomerController {
         return "redirect:/";
     }
 
-    @GetMapping("/product/{id}/delete")
+    @GetMapping("/blog/{id}/delete")
     public String delete(@PathVariable int id, Model model) {
         model.addAttribute("blog", blogService.findById(id));
         return "delete";
     }
 
-    @PostMapping("/product/delete")
+    @PostMapping("/blog/delete")
     public String delete(Blog blog, RedirectAttributes redirect) {
         blogService.delete(blog.getId());
         redirect.addFlashAttribute("success", "Removed product successfully!");
         return "redirect:/";
     }
 
-    @GetMapping("/product/{id}/view")
+    @GetMapping("/blog/{id}/view")
     public String view(@PathVariable int id, Model model) {
         model.addAttribute("blog", blogService.findById(id));
         return "view";

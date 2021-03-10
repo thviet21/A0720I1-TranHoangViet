@@ -11,15 +11,15 @@
 <div id="detail">
     <div class="cusdetail">
         <label>ID Blog:</label>
-        <input th:text="${blog.getId()}" readonly>
+        <label th:text="${blog.getId()}"></label>
     </div>
     <div class="cusdetail">
         <label>Blog Title:</label>
-        <input th:text="${blog.getTitleBlog()}" readonly>
+        <label th:text="${blog.getTitleBlog()}"></label>
     </div>
     <div class="cusdetail">
         <label>Description Blog:</label>
-        <input th:text="${blog.getDescBlog()}" readonly>
+        <label th:text="${blog.getDescBlog()}"></label>
     </div>
 </div>
 <footer th:replace="layout :: footer"></footer>
