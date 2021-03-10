@@ -4,6 +4,8 @@ import com.codegym.demospringjpa.models.Student;
 import com.codegym.demospringjpa.repositories.StudentRepository;
 import com.codegym.demospringjpa.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,8 +16,8 @@ public class StudentServiceImpl implements StudentService {
     StudentRepository studentRepository;
 
     @Override
-    public List<Student> findAll() {
-        return studentRepository.findAll();
+    public Page<Student> findAll(Pageable pageable) {
+        return studentRepository.findAll(pageable);
     }
 
     @Override
