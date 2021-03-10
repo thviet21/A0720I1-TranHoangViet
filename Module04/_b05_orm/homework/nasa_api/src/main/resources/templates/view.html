@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="img-of-the-day">
+<script>
+    let query = 'https://api.nasa.gov/planetary/apod?api_key=KnNvzqUSyDaEa6SQXTUPgORyNljIPappK46lQKAE;
+    let request = new XMLHttpRequest();
+    request.open('GET', query);
+    request.onload = function() {
+        if (request.status === 200) {
+            let response = JSON.parse(request.responseText);
+            document.getElementById('img-of-the-day').setAttribute('src', response.url);
+        }
+    };
+    request.send();
+</script>
+<h3>Create Feedback</h3>
+<form action="#" th:action="@{/createFeedback/save}" th:object="feedback" method="post" novalidate="novalidate">
+    <input type="hidden" th:field="*{ id }">
+    <select th:field= "*{star}">
+        <option th:each=" star : ${stars}" th:value="${ star }" th:text="${star}">
+    </select>
+    <br>
+    <label>Author: </label><br>
+    <input type="text" th:field="*{ author }"/  >
+    <br>
+    <label>Description Feedback: </label><br>
+    <input type="text" th:field="*{descFeedback}"/>
+    <br>
+    <label>Author: </label><br>
+    <input type="text" th:field="*{author}"/>
+    <input type="submit" value="Submit"/>
+</form>
+<a href="/">Back to List</a>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

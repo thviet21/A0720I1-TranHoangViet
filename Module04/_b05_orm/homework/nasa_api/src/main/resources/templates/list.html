@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="UTF-8">
+    <title>List Feedback</title>
+</head>
+<body>
+<h3>List Feedback</h3>
+<a href="createFeedback">Add Feedback</a>
+<table border="1px" style="border-collapse: collapse">
+    <tr>
+        <th>ID</th>
+        <th>Star</th>
+        <th>Description Feedback</th>
+        <th>Author</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    <tr th:each = "feedback : ${ listFeedback }">
+        <td th:text = "${feedback.getId()}"></td>
+        <td th:text = "${feedback.getStar()}"></td>
+        <td th:text = "${feedback.getDescFeedback()}"></td>
+        <td th:text = "${feedback.getAuthor()}"></td>
+        <td><a th:href="@{/feedback/{id}/edit(id=${feedback.getId()})}">Edit</a></td>
+        <td><a th:href="@{/feedback/{id}/delete(id=${feedback.getId()})}">Delete</a></td>
+        <td><a th:href="@{/feedback/{id}/view(id=${feedback.getId()})}">View</a></td>
+    </tr>
+</table>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>
