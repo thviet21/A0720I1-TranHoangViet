@@ -1,6 +1,8 @@
 package com.codegym.demospringjpa.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Student {
@@ -8,6 +10,8 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @NotBlank(message = "Ten khong duoc de trong")
+    @Size(min = 6, max = 15, message = "Ten phai tu 6 den 15 ky tu")
     private String name;
 
     @ManyToOne
