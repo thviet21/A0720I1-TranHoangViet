@@ -3,12 +3,12 @@ package com.codegym.blog.models;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -19,5 +19,9 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+    @NonNull
     private String nameCategory;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "category", cascade = CascadeType.REMOVE)
+    private Set<Blog> blogs;
 }

@@ -28,14 +28,14 @@ public class BlogController {
     @Autowired
     CategoryServiceImpl categoryService;
 
-    @GetMapping(value = "/")
+    @GetMapping
     public ResponseEntity<List<Blog>> listBlog() {
         List<Blog> blogList = blogService.findAllBlog();
-        return blogList.isEmpty() ? new ResponseEntity<List<Blog>>(HttpStatus.NO_CONTENT) : new ResponseEntity<List<Blog>>(blogList, HttpStatus.OK);
+        return blogList.isEmpty() ? new ResponseEntity<>(HttpStatus.NO_CONTENT) : new ResponseEntity<>(blogList, HttpStatus.OK);
     }
 
 
-    @PostMapping("/save")
+    @PostMapping
     public ResponseEntity<Void> saveBlog(@RequestBody Blog blog) {
         System.out.println("Creating Customer " + blog.getTitleBlog());
         blogService.save(blog);
@@ -43,8 +43,8 @@ public class BlogController {
     }
 
 
-    @PutMapping("/edit/{id}")
-    public ResponseEntity<Blog> edit(@RequestBody Blog blog, @PathVariable int id) {
+    @PutMapping("/{id}")
+    public ResponseEntity<Blog> editBlog(@RequestBody Blog blog, @PathVariable int id) {
         Blog crBlog = blogService.findById(id);
         if (crBlog == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -54,23 +54,23 @@ public class BlogController {
         return new ResponseEntity<>(blog,HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Blog> deleteCustomer(@PathVariable("id") int id) {
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Blog> deleteBlog(@PathVariable("id") int id) {
         System.out.println("Fetching & Deleting Customer with id " + id);
 
         Blog blog = blogService.findById(id);
         if (blog == null) {
             System.out.println("Unable to delete. Customer with id " + id + " not found");
-            return new ResponseEntity<Blog>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
         blogService.delete(id);
-        return new ResponseEntity<Blog>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @GetMapping("/view/{id}")
-    public ResponseEntity<Blog> view(@PathVariable int id) {
+    @GetMapping("/{id}")
+    public ResponseEntity<Blog> viewBlog(@PathVariable int id) {
         Blog blog =  blogService.findById(id);
-        return blog == null ? new ResponseEntity<Blog>(HttpStatus.NOT_FOUND) : new ResponseEntity<Blog>(blog,HttpStatus.OK);
+        return blog == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : new ResponseEntity<>(blog,HttpStatus.OK);
     }
 }

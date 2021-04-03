@@ -19,7 +19,7 @@ public class Blog {
     private String titleBlog;
     private String descBlog;
 
-    @ManyToOne(cascade = CascadeType.MERGE)
+    @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
 
