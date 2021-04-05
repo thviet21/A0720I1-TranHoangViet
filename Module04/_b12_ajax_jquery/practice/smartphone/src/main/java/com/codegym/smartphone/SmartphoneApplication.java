@@ -1,13 +1,13 @@
-package com.codegym.management_phone;
+package com.codegym.smartphone;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ManagementPhoneApplication {
+public class SmartphoneApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ManagementPhoneApplication.class, args);
+        SpringApplication.run(SmartphoneApplication.class, args);
     }
 
 }
