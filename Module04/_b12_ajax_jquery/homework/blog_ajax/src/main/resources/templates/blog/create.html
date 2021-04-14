@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/student/layout::head}">
+
+</head>
+<body>
+<form action="/student/create" method="post" th:object="${blog}">
+    <div>
+        Category:
+        <select th:field="${blog.category}">
+            <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.nameCategory}"></option>
+        </select>
+    </div>
+    <div>
+        <label>
+        Title Blog:
+        </label>
+        <input type="text" th:field="*{titleBlog}">
+    </div>
+    <div>
+        <label>Description blog:</label>
+        <input type="text"  th:field="*{descBlog}"/>
+    </div>
+    <input type="submit" value="Create">
+</form>
+</body>
+</html>
