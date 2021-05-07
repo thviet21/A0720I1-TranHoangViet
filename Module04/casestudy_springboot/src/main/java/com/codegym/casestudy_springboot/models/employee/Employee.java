@@ -40,6 +40,6 @@ public class Employee {
     @ManyToOne(cascade = CascadeType.ALL)
     private Division division;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    private User user;
+//    @ManyToOne(cascade = CascadeType.ALL)
+//    private User user;
 }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{/student/layout::head}">
+<head th:replace="~{/layout::head}">
 
 </head>
 <body>
-<form action="/student/create" method="post" th:object="${blog}">
+<form action="/blogs/create" method="post" th:object="${blog}">
     <div>
         Category:
-        <select th:field="${blog.category}">
+        <select th:field="*{category}">
             <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.nameCategory}"></option>
         </select>
     </div>
@@ -21,7 +21,10 @@
         <label>Description blog:</label>
         <input type="text"  th:field="*{descBlog}"/>
     </div>
-    <input type="submit" value="Create">
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary create">Save</button>
+    </div>
 </form>
 </body>
 </html>

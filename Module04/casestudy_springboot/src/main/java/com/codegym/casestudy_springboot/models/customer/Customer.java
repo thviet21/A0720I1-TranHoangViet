@@ -12,7 +12,7 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private CustomerType customerType;
 
     @Column(length = 45)

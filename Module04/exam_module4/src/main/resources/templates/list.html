@@ -1,10 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <div th:replace="/fragments/layout :: headerfiles"></div>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>List</title>
 </head>
 <body>
-$END$
+<div class="container-fluid">
+
+    <h1>List Discount</h1>
+
+    <a th:href="@{/create}">Add Discount</a>
+
+    <table id="products" class="table table-striped table-bordered">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title Discount</th>
+            <th scope="col">Start Day</th>
+            <th scope="col">End Day</th>
+            <th scope="col">Discount Value</th>
+            <th scope="col">Description Discount</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="discount : ${listDiscounts}">
+            <td th:text="${discount.id}"></td>
+            <td th:text="${discount.title}"></td>
+            <td th:text="${discount.startDay}"></td>
+            <td th:text="${discount.endDay}"></td>
+            <td th:text="${discount.discountValue}"></td>
+            <td th:text="${discount.description}"></td>
+            <td>
+                <a th:href="@{/edit/${discount.id}}" class="btn btn-primary">Edit</a>
+                <a th:href="@{/view/${discount.id}}" class="btn btn-primary">View</a>
+                <a th:href="@{/delete(id=${discount.id})}" onclick="confirm('Xác nhận xóa?')" class="btn btn-primary">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+<!--    &lt;!&ndash; Modal &ndash;&gt;-->
+<!--    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">-->
+<!--        <div class="modal-dialog" role="document">-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header">-->
+<!--                    <h5 class="modal-title">Delete</h5>-->
+<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <p>Body</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <script>-->
+<!--        $(document).ready(function () {-->
+<!--            $("#btnModalDelele").click(function () {-->
+<!--                $.ajax({-->
+<!--                    type: "GET",-->
+<!--                    url: "/delete",-->
+<!--                    dataType: "HTML",-->
+<!--                    success: function (data) {-->
+<!--                        $(".modal-body").html(data);-->
+<!--                        $("#modelId").modal('show');-->
+<!--                    }-->
+<!--                });-->
+<!--            });-->
+
+<!--        })-->
+<!--    </script>-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"-->
+<!--            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"-->
+<!--            crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"-->
+<!--            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"-->
+<!--            crossorigin="anonymous"></script>-->
+</div>
 </body>
 </html>

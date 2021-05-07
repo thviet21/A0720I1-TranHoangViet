@@ -1,4 +1,4 @@
-package com.codegym.casestudy_springboot.models;
+package com.codegym.casestudy_springboot.controller;
 
 import com.codegym.casestudy_springboot.models.customer.Customer;
 import com.codegym.casestudy_springboot.models.customer.CustomerType;

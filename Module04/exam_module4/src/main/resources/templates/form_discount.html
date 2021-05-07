@@ -6,37 +6,40 @@
     <title>Form Input</title>
 </head>
 <body>
-<form th:action="@{/register}" method="post" th:object="${user}">
-    <table>
-        <tr>
-            <td>First Name:</td>
-            <td><input type="text" th:field="*{firstName}"></td>
-            <td th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></td>
-        </tr>
-        <tr>
-            <td>Last Name:</td>
-            <td><input type="text" th:field="*{lastName}"></td>
-            <td th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></td>
-        </tr>
-        <tr>
-            <td>Phone Number :</td>
-            <td><input type="text" th:field="*{phoneNumber}"></td>
-            <td th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></td>
-        </tr>
-        <tr>
-            <td>Age :</td>
-            <td><input type="text" th:field="*{age}"></td>
-            <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></td>
-        </tr>
-        <tr>
-            <td>Email:</td>
-            <td><input type="text" th:field="*{email}"></td>
-            <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Submit"></td>
-        </tr>
-    </table>
+<h1 style="text-align: center">Create Discount</h1>
+<form class="form" th:action="@{/create}" method="post" th:object="${discount}">
+    <center>
+        <table>
+            <tr>
+                <td>Title Discount:</td>
+                <td><input type="text" th:field="*{title}"></td>
+                <td th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></td>
+            </tr>
+            <tr>
+                <td>Start Day:</td>
+                <td><input type="date" th:field="*{startDay}"></td>
+                <td th:if="${#fields.hasErrors('startDay')}" th:errors="*{startDay}"></td>
+            </tr>
+            <tr>
+                <td>End Day:</td>
+                <td><input type="date" th:field="*{endDay}"></td>
+                <td th:if="${#fields.hasErrors('endDay')}" th:errors="*{endDay}"></td>
+            </tr>
+            <tr>
+                <td>Discount Value :</td>
+                <td><input type="text" th:field="*{discountValue}"></td>
+                <td th:if="${#fields.hasErrors('discountValue')}" th:errors="*{discountValue}"></td>
+            </tr>
+            <tr>
+                <td>Description Discount:</td>
+                <td><input type="text" th:field="*{description}"></td>
+                <td th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></td>
+            </tr>
+            <tr>
+                <td><input class="btn btn-success" type="submit" value="Create Discount"></td>
+            </tr>
+        </table>
+    </center>
 </form>
 </body>
 </html>

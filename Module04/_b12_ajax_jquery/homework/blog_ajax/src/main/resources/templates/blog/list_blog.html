@@ -3,19 +3,17 @@
 <head th:replace="~{layout::head}">
     <meta charset="UTF-8">
     <title>List Blog</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body id="list">
+<h3 th:if="${success}" th:text="${success}" style="color: red"></h3>
+
 <form action="/blogs/search">
     <label>Input Text: </label>
     <input type="text" placeholder="Search theo tên" th:name="inputSearch">
     <input type="submit" value="Search">
 </form>
 
-<table class="tableBlogs" border="1px solix black">
+<table class="table Blogs" border="1px solix black">
     <tr>
         <th>ID</th>
         <th>Category</th>
@@ -29,7 +27,7 @@
         <td th:text="*{blog.titleBlog}"></td>
         <td th:text="*{blog.descBlog}"></td>
         <td>
-            <button type="button" th:value="${blog.id}">Edit</button>
+            <button class="btn btn-danger btn-lg btnModalEdit" type="button" th:value="${blog.id}">Edit</button>
         </td>
     </tr>
 </table>
@@ -44,7 +42,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
+                <h5 class="modal-title">Create </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -59,12 +57,27 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="modelId2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Blog</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Body
+            </div>
+        </div>
+    </div>
+</div>
 <script>
     $(document).ready(function () {
         $("#btnModalCreate").click(function () {
             $.ajax({
                 type: "GET",
-                url: "/create",
+                url: "/blogs/create",
                 dataType: "HTML",
                 success: function (data) {
                     $(".modal-body").html(data);
@@ -72,23 +85,26 @@
                 }
             });
         });
-        $(".edit").click(function () {
+        $(".btnModalEdit").click(function () {
             $.ajax({
                 type: "GET",
-                url: "/student/edit/" + $(this).val(),
-                dataType: "HTML",
+                url: "/blogs/"+$(this).val()+"/edit/"  ,
+                dataType: "html",
                 success: function (data) {
                     $(".modal-body").html(data);
-                    $("#modelId").modal('show');
+                    $("#modelId2").modal('show');
                 }
             });
         });
     })
 </script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

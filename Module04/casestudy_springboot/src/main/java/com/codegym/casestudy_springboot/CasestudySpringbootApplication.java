@@ -8,6 +8,7 @@ public class CasestudySpringbootApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CasestudySpringbootApplication.class, args);
+
     }
 
 }

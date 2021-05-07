@@ -25,13 +25,13 @@ public class Contract {
 
     private double total;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Employee employee;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Customer customer;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Service service;
 
 }
