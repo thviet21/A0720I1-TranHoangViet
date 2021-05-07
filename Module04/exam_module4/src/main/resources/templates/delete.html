@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="/fragments/layout :: headerfiles"></div>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+</head>
+<body>
+<form action="/delete" method="post" th:object="${discount}">
+    <input type="text" th:value="${id}">
+    <div>
+        Title:
+        <input type="text" th:field="*{title}">
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary create">Delete</button>
+    </div>
+</form>
+</body>
+</html>
