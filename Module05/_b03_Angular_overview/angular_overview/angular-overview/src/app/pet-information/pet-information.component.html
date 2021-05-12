@@ -1,0 +1,20 @@
+<h3>
+  Pet Information
+</h3>
+<div [(ngModel)]="pet">
+  <div>
+    <label>Name:</label>
+    <input type="text" [(ngModel)]="pet.namePet" >
+  </div>
+  <div>
+    <label>Image: </label>
+    <input type="url" (change)="updateImage($event.target.value)">
+  </div>
+  <div>
+    <label>Price:</label>
+    <input type="text" [(ngModel)]="pet.pricePet">
+  </div>
+</div>
+<h3>Pet name: {{pet.namePet}}</h3>
+<img [src]="pet.imagePet" style="max-width: 30%">
+<h3>Pet price: {{pet.pricePet}}</h3>
