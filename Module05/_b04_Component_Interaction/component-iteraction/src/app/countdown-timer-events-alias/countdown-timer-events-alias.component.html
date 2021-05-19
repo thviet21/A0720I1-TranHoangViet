@@ -1,0 +1,11 @@
+<h2>Countdown Timer</h2>
+
+<div class="group-actions">
+  <button class="btn btn-primary" (click)="start()">Start</button>
+  <button class="btn btn-danger" (click)="stop()">Stop</button>
+  <button class="btn btn-success" (click)="reset()">Reset</button>
+</div>
+<div class="timer">
+  <span class="timer-text">{{ remainingTime }}</span>
+</div>
+<p>{{ message }}</p>

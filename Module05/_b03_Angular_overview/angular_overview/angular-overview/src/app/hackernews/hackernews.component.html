@@ -1,0 +1,19 @@
+<h2>Today's article</h2>
+<div>
+  <label>
+    Title: <textarea id="title" [(ngModel)]="acticle.title" cols="70"></textarea>
+  </label>
+  Url: <textarea id="url" [(ngModel)]="acticle.url" cols="70"></textarea>
+</div>
+<button class="btn btn-success" (click)="addArticle()">Add</button>
+<div class="bg-light">
+  <table class="table table-striped" *ngFor="let article of articles">
+    <tr>
+      <a style="text-decoration: none" href="{{article.url}}" target="_blank">{{article.title}}</a> |
+      <app-likes></app-likes>
+    </tr>
+  </table>
+</div>
+
+<hr>
+@CodeGym, 2019

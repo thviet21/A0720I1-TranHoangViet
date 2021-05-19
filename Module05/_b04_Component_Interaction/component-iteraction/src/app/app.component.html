@@ -1,0 +1,13 @@
+<div class="container">
+  <app-name-card cardName="Trần Hoàng Việt" email="tranhoangviet.21@gmail.com" phone="0704529871"></app-name-card>
+  <hr>
+  <app-process-bar width="65"></app-process-bar>
+  <hr>
+  <app-rating-bar [maxrate]="10" (rateChange)="$event"></app-rating-bar>
+  <hr>
+  <app-countdown-timer-events-alias seconds="10" (timerEnd)="endCountdown()">
+  </app-countdown-timer-events-alias>
+  <p>{{ countdownAliasMsg }}</p>
+  <hr>
+  <app-pipe></app-pipe>
+</div>

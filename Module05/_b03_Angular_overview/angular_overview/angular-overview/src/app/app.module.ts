@@ -8,6 +8,9 @@ import {FormsModule} from '@angular/forms';
 import { PetInformationComponent } from './pet-information/pet-information.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { PickColorComponent } from './pick-color/pick-color.component';
+import { HackernewsComponent } from './hackernews/hackernews.component';
+import { LikesComponent } from './likes/likes.component';
+import { NameCardComponent } from './name-card/name-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { PickColorComponent } from './pick-color/pick-color.component';
     FontSizeComponent,
     PetInformationComponent,
     CalculatorComponent,
-    PickColorComponent
+    PickColorComponent,
+    HackernewsComponent,
+    LikesComponent,
+    NameCardComponent
   ],
   imports: [
     BrowserModule,
