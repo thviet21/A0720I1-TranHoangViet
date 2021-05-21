@@ -1,0 +1,48 @@
+<form [formGroup]="formCreateCustomerReactive" (ngSubmit)="onSubmit()">
+  <img class="rounded mx-auto d-block" src="../../assets/angular.png" alt="">
+
+  <div class="form-group">
+    <label for="email">ID</label>
+    <input type="text"   class="form-control" id="id" formControlName="id">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email"  class="form-control" id="email" formControlName="email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" formControlName="password">
+  </div>
+  <div class="form-group">
+    <label for="confirmpw">Confirm Password</label>
+    <input type="password" class="form-control" id="confirmpw" formControlName="confirmpw">
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <select formControlName="country" id="country">
+      <option value="Việt nam">Việt nam</option>
+      <option value="Hoa kỳ">Hoa kỳ</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Australia">Australia</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="text" class="form-control" id="age" formControlName="age">
+  </div>
+  <div class="form-group">
+    <label>Gender:</label>
+    <input type="radio" id="male" formControlName="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" formControlName="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" formControlName="gender" value="other">
+    <label for="other"> Other</label>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" class="form-control" id="phone" formControlName="phone">
+  </div>
+  <button type="submit">Submit</button>
+</form>
+{{customer | json}}
