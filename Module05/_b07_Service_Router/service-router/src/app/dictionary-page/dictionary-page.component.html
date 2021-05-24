@@ -1,0 +1,20 @@
+<h2>Dictionary List</h2>
+<a routerLink="/dictionary/create" class="btn btn-success">Create Dictionary Entry</a>
+<table class="table table-striped">
+  <tr>
+    <th>ID</th>
+    <th>English</th>
+    <th>Tiếng Việt</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let item of listDictionary">
+    <td>{{item.id}}</td>
+    <td>{{item.english}}</td>
+    <td>{{item.vietnamese}}</td>
+    <td>
+      <button class="btn btn-primary" [routerLink]="['/dictionary/view/', item.id]">View</button>
+      <button class="btn btn-warning" [routerLink]="['/dictionary/edit/', item.id]">Edit</button>
+      <button class="btn btn-danger">Delete</button>
+    </td>
+  </tr>
+</table>

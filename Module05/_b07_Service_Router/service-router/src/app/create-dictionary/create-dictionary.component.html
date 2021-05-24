@@ -1,0 +1,11 @@
+<h2> Create Dictionary</h2>
+
+<form [formGroup]="dictionaryForm" (submit)="createDictionary()">
+  <label>English: </label>
+  <input type="text" formControlName="english"><br>
+  <label>Vietnamese: </label>
+  <input type="text" formControlName="vietnamese"><br>
+  <label>Description: </label>
+  <input type="text" formControlName="description"><br>
+  <button class="btn btn-success" type="submit">Create Dictionary Entry</button>
+</form>

@@ -2,12 +2,24 @@
   <img class="rounded mx-auto d-block" src="../../assets/angular.png" alt="">
 
   <div class="form-group">
-    <label for="email">ID</label>
-    <input type="text"   class="form-control" id="id" formControlName="id">
+    <label for="id">ID</label>
+    <input type="text" class="form-control" id="id" formControlName="id">
+    <ng-container *ngFor="let validation of validation_messages.id">
+      <p class="text-danger" *ngIf="formCreateCustomerReactive.get('id').hasError(validation.type) &&
+  (formCreateCustomerReactive.get('id').dirty || formCreateCustomerReactive.get('id').touched)">
+        {{ validation.message}}
+      </p>
+    </ng-container>
   </div>
   <div class="form-group">
     <label for="email">Email address</label>
-    <input type="email"  class="form-control" id="email" formControlName="email">
+    <input type="email" class="form-control" id="email" formControlName="email">
+    <ng-container *ngFor="let validation of validation_messages.email">
+      <p class="text-danger" *ngIf="formCreateCustomerReactive.get('email').hasError(validation.type) &&
+  (formCreateCustomerReactive.get('email').dirty || formCreateCustomerReactive.get('email').touched)">
+        {{validation.message}}
+      </p>
+    </ng-container>
   </div>
   <div class="form-group">
     <label for="password">Password</label>
@@ -42,6 +54,12 @@
   <div class="form-group">
     <label for="phone">Phone</label>
     <input type="text" class="form-control" id="phone" formControlName="phone">
+    <ng-container *ngFor="let validation of validation_messages.phone">
+      <p class="text-danger" *ngIf="formCreateCustomerReactive.get('phone').hasError(validation.type) &&
+  (formCreateCustomerReactive.get('phone').dirty || formCreateCustomerReactive.get('phone').touched)">
+        {{validation.message}}
+      </p>
+    </ng-container>
   </div>
   <button type="submit">Submit</button>
 </form>

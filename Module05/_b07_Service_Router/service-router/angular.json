@@ -88,9 +88,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "service-router"
+    }
+  },
+  "defaultProject": "service-router",
+  "cli": {
+    "analytics": "b7baf05c-12d8-49c4-8098-0d7871d63198"
+  }
 }
